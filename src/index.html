@@ -1,0 +1,1738 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta -->
+    <title>
+      TropicalHarvest — Ekspor Pisang Mentah & Kelengkeng Premium Indonesia
+    </title>
+    <meta
+      name="description"
+      content="TropicalHarvest menumbuhkan dan mengekspor pisang mentah serta kelengkeng premium dari Indonesia ke seluruh dunia, dengan presisi rantai dingin dan kualitas terbaik di setiap tahap."
+    />
+    <meta
+      name="keywords"
+      content="ekspor pisang mentah, ekspor kelengkeng, eksportir buah indonesia, tropical harvest"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="TropicalHarvest" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="canonical" href="https://tropicalharvest.co.id/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="TropicalHarvest — Ekspor Buah Tropis Premium Indonesia"
+    />
+    <meta
+      property="og:description"
+      content="Pisang mentah dan kelengkeng, diekspor dengan presisi dari Indonesia ke pasar global."
+    />
+    <meta property="og:url" content="https://tropicalharvest.co.id/" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#111111" /* Hitam teks utama  */,
+              mist: "#F5F5F7" /* Abu-abu latar     */,
+              slate: "#6E6E73" /* Teks sekunder     */,
+              leaf: "#3FAE5A" /* Hijau aksen       */,
+              leafd: "#2F8A45" /* Hijau gelap hover */,
+              leafl: "#E8F6EC" /* Hijau latar kartu */,
+            },
+
+            fontFamily: {
+              sans: ["Inter", "-apple-system", "system-ui", "sans-serif"],
+            },
+
+            borderRadius: {
+              "4xl": "24px",
+              "5xl": "32px",
+            },
+
+            boxShadow: {
+              soft: "0 2px 20px rgba(17,17,17,0.06)",
+              card: "0 10px 40px rgba(17,17,17,0.07)",
+              lifted: "0 24px 64px rgba(17,17,17,0.14)",
+              glow: "0 12px 36px rgba(63,174,90,0.28)",
+            },
+
+            letterSpacing: {
+              tightest: "-0.04em",
+              tighter: "-0.025em",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS (dipisah dari HTML) -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="antialiased">
+    <!-- ============================================================
+       NAVIGASI
+       ============================================================ -->
+    <nav id="nav" class="fixed top-0 inset-x-0 z-50">
+      <div
+        class="nav-inner max-w-7xl mx-auto px-6 lg:px-10 h-[60px] flex items-center justify-between text-white"
+      >
+        <a
+          href="#atas"
+          class="flex items-center gap-2 font-semibold tracking-tight text-[15px]"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2C12 2 6 6.5 6 13C6 17.4183 8.68629 21 12 21C15.3137 21 18 17.4183 18 13C18 6.5 12 2 12 2Z"
+              fill="#3FAE5A"
+            />
+          </svg>
+          TropicalHarvest
+        </a>
+
+        <div class="hidden lg:flex items-center gap-9 text-[13px] font-medium">
+          <a href="#produk" class="nav-link">Produk</a>
+          <a href="#proses" class="nav-link">Proses Ekspor</a>
+          <a href="#mengapa" class="nav-link">Mengapa Kami</a>
+          <a href="#galeri" class="nav-link">Galeri Kebun</a>
+          <a href="#testimoni" class="nav-link">Pembeli</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </div>
+
+        <a
+          href="#kontak"
+          class="tombol-ripple tombol-gelap hidden lg:inline-flex items-center gap-1.5 bg-leaf text-white text-[13px] font-semibold px-4 py-2 rounded-full hover:bg-leafd transition-colors"
+        >
+          Minta Penawaran
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 12H19M19 12L13 6M19 12L13 18"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+
+        <button
+          id="tombol-menu"
+          class="lg:hidden p-2 -mr-2"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 7H20M4 12H20M4 17H20"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="menu-mobile"
+        class="lg:hidden hidden bg-white/95 backdrop-blur-xl border-t border-black/5"
+      >
+        <div class="px-6 py-5 flex flex-col gap-1 text-ink">
+          <a
+            href="#produk"
+            class="py-3 text-[15px] font-medium border-b border-black/5"
+            >Produk</a
+          >
+          <a
+            href="#proses"
+            class="py-3 text-[15px] font-medium border-b border-black/5"
+            >Proses Ekspor</a
+          >
+          <a
+            href="#mengapa"
+            class="py-3 text-[15px] font-medium border-b border-black/5"
+            >Mengapa Kami</a
+          >
+          <a
+            href="#galeri"
+            class="py-3 text-[15px] font-medium border-b border-black/5"
+            >Galeri Kebun</a
+          >
+          <a
+            href="#testimoni"
+            class="py-3 text-[15px] font-medium border-b border-black/5"
+            >Pembeli</a
+          >
+          <a href="#kontak" class="py-3 text-[15px] font-medium">Kontak</a>
+          <a
+            href="#kontak"
+            class="mt-3 text-center bg-leaf text-white text-[14px] font-semibold px-4 py-3 rounded-full"
+          >
+            Minta Penawaran
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       HERO
+       ============================================================ -->
+    <section
+      id="atas"
+      class="relative h-[100vh] min-h-[680px] w-full overflow-hidden bg-ink"
+    >
+      <div class="absolute inset-0">
+        <img
+          id="gambar-hero"
+          src="https://images.unsplash.com/photo-1602520861941-e0e9e7bf87f2?q=80&w=2400&auto=format&fit=crop"
+          alt="Kebun tropis yang rimbun saat senja keemasan"
+          class="parallax-img w-full h-full object-cover opacity-[0.92] scale-[1.08]"
+          onerror="
+            this.onerror = null;
+            this.src =
+              'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2400&auto=format&fit=crop';
+          "
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/65"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"
+        ></div>
+      </div>
+
+      <div
+        class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6"
+      >
+        <p class="reveal label-seksi mb-5" style="color: #8fe0a8">
+          Ditanam di Indonesia · Dikirim ke Seluruh Dunia
+        </p>
+        <h1
+          class="reveal text-balance text-white font-extrabold tracking-tightest leading-[0.98] text-[44px] sm:text-[64px] lg:text-[84px]"
+        >
+          Buah tropis,<br class="hidden sm:block" />
+          diekspor dengan presisi.
+        </h1>
+        <p
+          class="reveal text-white/80 mt-6 max-w-xl text-[17px] sm:text-[19px] leading-relaxed"
+        >
+          Pisang mentah dan kelengkeng, tumbuh di tanah Indonesia dan terkirim
+          ke pasar global tanpa kehilangan kualitas yang membuatnya istimewa.
+        </p>
+        <div class="reveal mt-10 flex flex-col sm:flex-row items-center gap-4">
+          <a
+            href="#produk"
+            class="tombol-ripple tombol-gelap inline-flex items-center gap-2 bg-leaf hover:bg-leafd text-white text-[15px] font-semibold px-7 py-3.5 rounded-full transition-colors shadow-glow"
+          >
+            Jelajahi Produk
+          </a>
+          <a
+            href="#proses"
+            class="tombol-ripple tombol-terang inline-flex items-center gap-2 bg-white/10 hover:bg-white/[0.16] text-white text-[15px] font-semibold px-7 py-3.5 rounded-full backdrop-blur-md transition-colors ring-1 ring-white/20"
+          >
+            Lihat Proses Ekspor
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-7 inset-x-0 flex justify-center z-10 reveal">
+        <a
+          href="#dipercaya"
+          aria-label="Gulir ke bawah"
+          class="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors"
+        >
+          <span class="text-[11px] tracking-[0.18em] uppercase">Gulir</span>
+          <span class="w-[1px] h-8 bg-white/40 relative overflow-hidden">
+            <span
+              class="absolute inset-x-0 -top-full w-full h-full bg-white animate-[scrollline_2s_ease-in-out_infinite]"
+            ></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       DIPERCAYA OLEH / SPONSOR
+       ============================================================ -->
+    <section
+      id="dipercaya"
+      class="bg-mist py-14 lg:py-16 border-b border-black/[0.04]"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <p
+          class="reveal text-center text-[12px] tracking-[0.18em] uppercase text-slate font-semibold mb-9"
+        >
+          Dipercaya importir di empat benua
+        </p>
+      </div>
+      <div class="bungkus-marquee relative overflow-hidden">
+        <div
+          class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-mist to-transparent z-10"
+        ></div>
+        <div
+          class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-mist to-transparent z-10"
+        ></div>
+        <div class="jalur-marquee gap-16 px-8 items-center">
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Meridian Foods</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Hanseo Trading Co.</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Gulfresh Imports</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Nordic Produce</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Sakura Fresh Market</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Al Wafrah Group</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Meridian Foods</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Hanseo Trading Co.</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Gulfresh Imports</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Nordic Produce</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Sakura Fresh Market</span
+          >
+          <span
+            class="text-2xl font-bold text-ink/25 tracking-tight whitespace-nowrap px-4"
+            >Al Wafrah Group</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PRODUK 01: PISANG 
+       ============================================================ -->
+    <section id="produk" class="bg-white pt-28 pb-8 lg:pt-36">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+          <p class="label-seksi mb-4">Produk 01 — Pisang Mentah</p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[36px] sm:text-[52px] text-ink"
+          >
+            Keras. Hijau. Dirancang untuk perjalanan jauh.
+          </h2>
+          <p class="text-slate text-[17px] mt-5 leading-relaxed">
+            Dipanen pada tahap yang tepat sehingga mampu bertahan selama tiga
+            minggu perjalanan laut dan tetap matang sempurna saat tiba di tangan
+            pembeli.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div
+          class="reveal relative rounded-4xl lg:rounded-5xl overflow-hidden zoom-gambar shadow-lifted h-[420px] sm:h-[540px] lg:h-[680px]"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?q=80&w=2400&auto=format&fit=crop"
+            alt="Sisir pisang hijau mentah yang baru dipanen"
+            class="w-full h-full object-cover"
+            loading="lazy"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1536546171790-40c34fae5c4f?q=80&w=2400&auto=format&fit=crop';
+            "
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+          ></div>
+          <div
+            class="absolute bottom-8 left-8 right-8 sm:bottom-12 sm:left-12 text-white"
+          >
+            <p
+              class="text-[13px] tracking-[0.16em] uppercase text-white/70 mb-2"
+            >
+              Varietas Cavendish &amp; Tanduk
+            </p>
+            <p
+              class="text-[22px] sm:text-[28px] font-semibold tracking-tight max-w-md text-balance"
+            >
+              Dipetik pada kematangan 75–80% untuk kekakuan standar ekspor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-10 mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6"
+      >
+        <div class="reveal kartu-produk bg-mist rounded-4xl p-8">
+          <div
+            class="animasi-buah w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-soft mb-5"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 12C3 7.5 7.5 3 12 3"
+                stroke="#3FAE5A"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 21C16.5 21 21 16.5 21 12"
+                stroke="#111111"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-ink text-[17px] mb-2">
+            Dipilih manual, setiap sisir
+          </h3>
+          <p class="text-slate text-[14.5px] leading-relaxed">
+            Tanpa pemilahan mekanis. Setiap sisir diperiksa dari panjang,
+            kelengkungan, hingga kondisi kulit.
+          </p>
+        </div>
+        <div class="reveal kartu-produk bg-mist rounded-4xl p-8">
+          <div
+            class="animasi-buah delay-1 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-soft mb-5"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 7H20L18 19H6L4 7Z"
+                stroke="#111111"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 7L2 4"
+                stroke="#3FAE5A"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-ink text-[17px] mb-2">
+            Rantai dingin 13,5°C tanpa putus
+          </h3>
+          <p class="text-slate text-[14.5px] leading-relaxed">
+            Dari packhouse ke pelabuhan hingga kapal, suhu tidak pernah keluar
+            dari toleransi ekspor yang ditetapkan.
+          </p>
+        </div>
+        <div class="reveal kartu-produk bg-mist rounded-4xl p-8">
+          <div
+            class="animasi-buah delay-2 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-soft mb-5"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2L20 7V17L12 22L4 17V7L12 2Z"
+                stroke="#3FAE5A"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-ink text-[17px] mb-2">
+            Kebun bersertifikat GlobalG.A.P.
+          </h3>
+          <p class="text-slate text-[14.5px] leading-relaxed">
+            Setiap kebun mitra diaudit berdasarkan standar yang sama seperti
+            yang kami terapkan pada diri sendiri.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PRODUK 02: KELENGKENG
+       ============================================================ -->
+    <section class="bg-white pt-20 pb-28 lg:pt-24 lg:pb-36">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+          <p class="label-seksi mb-4">Produk 02 — Kelengkeng</p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[36px] sm:text-[52px] text-ink"
+          >
+            Buah kecil. Standar yang sangat ketat.
+          </h2>
+          <p class="text-slate text-[17px] mt-5 leading-relaxed">
+            Daging putih bening, rasa manis yang dalam, dan umur simpan yang
+            diperpanjang melalui pendinginan cepat pasca panen.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-6">
+        <div
+          class="reveal relative rounded-4xl lg:rounded-5xl overflow-hidden zoom-gambar shadow-lifted h-[360px] lg:h-[560px]"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1564149504298-69c974dc2ee5?q=80&w=2000&auto=format&fit=crop"
+            alt="Kelompok buah kelengkeng segar"
+            class="w-full h-full object-cover"
+            loading="lazy"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1507747104032-19765eb4f13c?q=80&w=2000&auto=format&fit=crop';
+            "
+          />
+        </div>
+        <div class="reveal flex flex-col justify-center gap-7 py-4">
+          <div class="flex items-start gap-4">
+            <span class="text-leaf font-bold text-[14px] mt-1 tabular-nums"
+              >22°Bx</span
+            >
+            <div>
+              <h3 class="font-semibold text-ink text-[18px]">
+                Kadar gula diverifikasi per lot
+              </h3>
+              <p class="text-slate text-[15px] mt-1 leading-relaxed">
+                Diuji Brix saat penerimaan. Lot di bawah ambang batas ditolak,
+                bukan dicampur.
+              </p>
+            </div>
+          </div>
+          <div class="h-px bg-black/[0.06]"></div>
+          <div class="flex items-start gap-4">
+            <span class="text-leaf font-bold text-[14px] mt-1 tabular-nums"
+              >4 jam</span
+            >
+            <div>
+              <h3 class="font-semibold text-ink text-[18px]">
+                Dari ladang ke ruang dingin
+              </h3>
+              <p class="text-slate text-[15px] mt-1 leading-relaxed">
+                Dipanen sebelum fajar dan pra-dinginkan di pagi yang sama untuk
+                mengunci cita rasa buah.
+              </p>
+            </div>
+          </div>
+          <div class="h-px bg-black/[0.06]"></div>
+          <div class="flex items-start gap-4">
+            <span class="text-leaf font-bold text-[14px] mt-1 tabular-nums"
+              >100%</span
+            >
+            <div>
+              <h3 class="font-semibold text-ink text-[18px]">
+                Dapat dilacak hingga kebun asal
+              </h3>
+              <p class="text-slate text-[15px] mt-1 leading-relaxed">
+                Setiap karton membawa kode lot yang menelusuri asal blok kebun
+                tempat buah dipetik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PROSES EKSPOR 
+       ============================================================ -->
+    <section id="proses" class="bg-ink py-28 lg:py-36 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16 lg:mb-24">
+          <p class="label-seksi mb-4" style="color: #6fcf8b">
+            Dari Kebun ke Pelabuhan Tujuan
+          </p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[36px] sm:text-[52px] text-white"
+          >
+            Satu jalur. Tanpa jalan pintas.
+          </h2>
+          <p class="text-white/60 text-[17px] mt-5 leading-relaxed">
+            Setiap pengiriman mengikuti jalur yang sama — lima pos pemeriksaan,
+            nol pengecualian.
+          </p>
+        </div>
+
+        <div id="bungkus-rute" class="reveal relative">
+          <svg
+            viewBox="0 0 1000 120"
+            class="w-full h-auto hidden md:block"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <line
+              id="garis-rute"
+              class="garis-rute"
+              x1="60"
+              y1="60"
+              x2="940"
+              y2="60"
+              stroke="#3FAE5A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-4 md:-mt-[60px] relative z-10"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="titik-rute w-14 h-14 rounded-full bg-leaf flex items-center justify-center shadow-glow mb-5"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 21C16 17 19 13.5 19 9.5C19 5.9 15.9 3 12 3C8.1 3 5 5.9 5 9.5C5 13.5 8 17 12 21Z"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="9.5"
+                    r="2.5"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-white font-semibold text-[15px] mb-1.5">Kebun</h3>
+              <p
+                class="text-white/55 text-[13.5px] leading-relaxed max-w-[170px]"
+              >
+                Dipanen manual pada kematangan ekspor terbaik
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="titik-rute w-14 h-14 rounded-full bg-white/10 ring-1 ring-white/25 flex items-center justify-center mb-5"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 7L12 3L21 7V17L12 21L3 17V7Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 7L12 11L21 7"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M12 11V21" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+              <h3 class="text-white font-semibold text-[15px] mb-1.5">
+                Packhouse
+              </h3>
+              <p
+                class="text-white/55 text-[13.5px] leading-relaxed max-w-[170px]"
+              >
+                Disortir, dicuci, dan dikemas untuk ekspor
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="titik-rute w-14 h-14 rounded-full bg-white/10 ring-1 ring-white/25 flex items-center justify-center mb-5"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 14H22L20 21H4L2 14Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M5 14V9H19V14" stroke="white" stroke-width="2" />
+                  <path d="M9 9V5H15V9" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+              <h3 class="text-white font-semibold text-[15px] mb-1.5">
+                Penyimpanan Dingin
+              </h3>
+              <p
+                class="text-white/55 text-[13.5px] leading-relaxed max-w-[170px]"
+              >
+                Pra-dinginkan dan dijaga pada suhu ekspor
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="titik-rute w-14 h-14 rounded-full bg-white/10 ring-1 ring-white/25 flex items-center justify-center mb-5"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="3"
+                    y="8"
+                    width="18"
+                    height="11"
+                    rx="1"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path d="M3 12H21" stroke="white" stroke-width="2" />
+                  <path d="M8 8V5H16V8" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+              <h3 class="text-white font-semibold text-[15px] mb-1.5">
+                Pelabuhan & Kontainer
+              </h3>
+              <p
+                class="text-white/55 text-[13.5px] leading-relaxed max-w-[170px]"
+              >
+                Bea cukai dilalui, kontainer disegel dan dicatat
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="titik-rute w-14 h-14 rounded-full bg-white/10 ring-1 ring-white/25 flex items-center justify-center mb-5"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 17L5 9H19L21 17"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 17H22V20H2V17Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 9V5H15L17 9"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-white font-semibold text-[15px] mb-1.5">
+                Tujuan
+              </h3>
+              <p
+                class="text-white/55 text-[13.5px] leading-relaxed max-w-[170px]"
+              >
+                Terkirim ke pelabuhan Anda, tepat waktu
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       STATISTIK PERUSAHAAN
+       ============================================================ -->
+    <section class="bg-white py-24 lg:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div
+          class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-6 text-center"
+        >
+          <div>
+            <p
+              class="angka-stat font-extrabold tracking-tightest text-ink text-[44px] sm:text-[56px]"
+              data-jumlah="18"
+            >
+              0
+            </p>
+            <p class="text-slate text-[14px] mt-2">Negara dilayani</p>
+          </div>
+          <div>
+            <p
+              class="angka-stat font-extrabold tracking-tightest text-ink text-[44px] sm:text-[56px]"
+            >
+              <span data-jumlah="12400">0</span>+
+            </p>
+            <p class="text-slate text-[14px] mt-2">Ton diekspor / tahun</p>
+          </div>
+          <div>
+            <p
+              class="angka-stat font-extrabold tracking-tightest text-ink text-[44px] sm:text-[56px]"
+            >
+              <span data-jumlah="98">0</span>%
+            </p>
+            <p class="text-slate text-[14px] mt-2">
+              Tingkat ketepatan pengiriman
+            </p>
+          </div>
+          <div>
+            <p
+              class="angka-stat font-extrabold tracking-tightest text-leaf text-[44px] sm:text-[56px]"
+              data-jumlah="12"
+            >
+              0
+            </p>
+            <p class="text-slate text-[14px] mt-2">Tahun pengalaman ekspor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       MENGAPA MEMILIH KAMI
+       ============================================================ -->
+    <section id="mengapa" class="bg-mist py-24 lg:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16">
+          <p class="label-seksi mb-4">Mengapa TropicalHarvest</p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+          >
+            Kualitas yang tidak perlu Anda percaya begitu saja.
+          </h2>
+        </div>
+
+        <div
+          class="reveal-stagger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 12L11 14L16 9"
+                  stroke="#3FAE5A"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z"
+                  stroke="#111111"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Tersertifikasi di setiap tahap
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              GlobalG.A.P., HACCP, dan dokumen fitosanitari menyertai setiap
+              pengiriman — bukan hanya yang pertama.
+            </p>
+          </div>
+
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 8V12L15 14"
+                  stroke="#3FAE5A"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="#111111"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Jadwal yang bisa Anda andalkan
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              Slot keberangkatan mingguan dipesan jauh sebelumnya, sehingga
+              perencanaan inventaris Anda tidak bergantung pada musim panen
+              kami.
+            </p>
+          </div>
+
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 12H20M4 12L8 8M4 12L8 16"
+                  stroke="#111111"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 12L16 8M20 12L16 16"
+                  stroke="#3FAE5A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Langsung dari petani, tanpa perantara
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              Kami bekerja langsung dengan kebun mitra, berarti harga lebih
+              kompetitif dan visibilitas penuh terhadap asal produk.
+            </p>
+          </div>
+
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 17L9 11L13 15L21 7"
+                  stroke="#3FAE5A"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 7H15M21 7V13"
+                  stroke="#111111"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Kualitas konsisten, lot demi lot
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              Kriteria grading yang terstandar memastikan karton yang Anda
+              terima di bulan Maret sama persis dengan yang dikirim bulan
+              Oktober.
+            </p>
+          </div>
+
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21C16 17 19 13.5 19 9.5C19 5.9 15.9 3 12 3C8.1 3 5 5.9 5 9.5C5 13.5 8 17 12 21Z"
+                  stroke="#111111"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 7V12L15 13.5"
+                  stroke="#3FAE5A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Keterlacakan pengiriman penuh
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              Lacak setiap kontainer dari packhouse ke pelabuhan dengan
+              dokumentasi tingkat lot atas permintaan.
+            </p>
+          </div>
+
+          <div class="kartu-produk bg-white rounded-4xl p-9">
+            <div
+              class="w-12 h-12 rounded-2xl bg-leafl flex items-center justify-center mb-6"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 11.5C21 16.75 16.5 20 12 22C7.5 20 3 16.75 3 11.5V5L12 2L21 5V11.5Z"
+                  stroke="#3FAE5A"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+              Tim yang selalu menjawab
+            </h3>
+            <p class="text-slate text-[15px] leading-relaxed">
+              Setiap pembeli mendapat koordinator ekspor khusus — bukan sistem
+              tiket yang mengantri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       GALERI KEBUN
+       ============================================================ -->
+    <section id="galeri" class="bg-white py-24 lg:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16">
+          <p class="label-seksi mb-4">Galeri Kebun</p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+          >
+            Di sinilah semuanya bermula.
+          </h2>
+        </div>
+        <div
+          class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 auto-rows-[180px] lg:auto-rows-[220px]"
+        >
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card row-span-2 col-span-1"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1400&auto=format&fit=crop"
+              alt="Hamparan tanaman tropis di bawah langit biru"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=1400&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1200&auto=format&fit=crop"
+              alt="Pekerja kebun merawat tanaman"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=1200&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop"
+              alt="Buah segar berwarna-warni di pasar"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=1200&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card row-span-2 col-span-1"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?q=80&w=1400&auto=format&fit=crop"
+              alt="Kontainer pengiriman bertumpuk di pelabuhan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1400&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card col-span-2"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1600&auto=format&fit=crop"
+              alt="Interior gudang modern siap ekspor"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1470723619862-dc2c47cd99ac?q=80&w=1600&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1507747104032-19765eb4f13c?q=80&w=1200&auto=format&fit=crop"
+              alt="Close-up buah tropis segar"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1200&auto=format&fit=crop';
+              "
+            />
+          </div>
+          <div
+            class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?q=80&w=1200&auto=format&fit=crop"
+              alt="Kapal kargo memuat kontainer ekspor di laut"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1493946820527-3ecdfe43e7fd?q=80&w=1200&auto=format&fit=crop';
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       TESTIMONI
+       ============================================================ -->
+    <section id="testimoni" class="bg-mist py-24 lg:py-32 overflow-hidden">
+      <div class="max-w-4xl mx-auto px-6 lg:px-10">
+        <div class="reveal text-center mb-14">
+          <p class="label-seksi mb-4">Pembeli Kami</p>
+          <h2
+            class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+          >
+            Dikatakan oleh mereka yang memesan ulang.
+          </h2>
+        </div>
+        <div class="reveal relative">
+          <div class="overflow-hidden">
+            <div id="jalur-testi" class="jalur-testi flex">
+              <div class="w-full shrink-0 px-2">
+                <div
+                  class="bg-white rounded-5xl shadow-card p-10 lg:p-14 text-center"
+                >
+                  <p
+                    class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                  >
+                    "Tiga tahun memesan, dan ketegasan buah saat tiba tidak
+                    pernah sekali pun tidak konsisten. Itulah inti dari hubungan
+                    bisnis ini."
+                  </p>
+                  <p class="mt-7 text-slate text-[14px] font-semibold">
+                    Lars Eriksen
+                  </p>
+                  <p class="text-slate/70 text-[13px]">
+                    Nordic Produce, Swedia
+                  </p>
+                </div>
+              </div>
+              <div class="w-full shrink-0 px-2">
+                <div
+                  class="bg-white rounded-5xl shadow-card p-10 lg:p-14 text-center"
+                >
+                  <p
+                    class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                  >
+                    "Skor Brix kelengkeng mereka adalah yang paling konsisten
+                    dari semua eksportir Asia Tenggara yang pernah kami uji."
+                  </p>
+                  <p class="mt-7 text-slate text-[14px] font-semibold">
+                    Mei Lin Tan
+                  </p>
+                  <p class="text-slate/70 text-[13px]">
+                    Sakura Fresh Market, Jepang
+                  </p>
+                </div>
+              </div>
+              <div class="w-full shrink-0 px-2">
+                <div
+                  class="bg-white rounded-5xl shadow-card p-10 lg:p-14 text-center"
+                >
+                  <p
+                    class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                  >
+                    "Kami beralihkan seluruh program pisang mentah kami kepada
+                    mereka setelah satu kontainer percobaan. Dokumentasinya saja
+                    menghemat berminggu-minggu proses bea cukai."
+                  </p>
+                  <p class="mt-7 text-slate text-[14px] font-semibold">
+                    Yusuf Al-Rashid
+                  </p>
+                  <p class="text-slate/70 text-[13px]">Al Wafrah Group, UEA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-3 mt-9">
+            <button
+              id="testi-prev"
+              aria-label="Testimoni sebelumnya"
+              class="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-leaf hover:text-white transition-colors text-ink"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div id="dot-testi" class="flex items-center gap-2"></div>
+            <button
+              id="testi-next"
+              aria-label="Testimoni berikutnya"
+              class="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-leaf hover:text-white transition-colors text-ink"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 6L15 12L9 18"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       KONTAK CTA
+       ============================================================ -->
+    <section id="kontak" class="relative bg-ink py-28 lg:py-36 overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?q=80&w=2400&auto=format&fit=crop"
+        alt=""
+        aria-hidden="true"
+        class="absolute inset-0 w-full h-full object-cover opacity-[0.18]"
+        loading="lazy"
+        onerror="
+          this.onerror = null;
+          this.src =
+            'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2400&auto=format&fit=crop';
+        "
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-ink via-ink/95 to-ink"
+      ></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+          <div class="reveal">
+            <p class="label-seksi mb-4" style="color: #6fcf8b">
+              Hubungi Tim Ekspor
+            </p>
+            <h2
+              class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[36px] sm:text-[52px] text-white"
+            >
+              Beritahu kami volume Anda. Sisanya kami urus.
+            </h2>
+            <p class="text-white/60 text-[17px] mt-6 leading-relaxed max-w-md">
+              Kirimkan detail kebutuhan Anda dan tim ekspor kami akan merespons
+              dalam satu hari kerja dengan penawaran harga dan jadwal pelayaran
+              terdekat.
+            </p>
+            <div class="mt-10 space-y-4">
+              <div class="flex items-center gap-3 text-white/80 text-[15px]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.87C9.4 20.18 3.82 14.6 3.13 3C3.08 2.45 3.53 2 4.08 2H7.08C7.58 2 8 2.39 8.04 2.89C8.16 4.39 8.49 5.86 9.01 7.25C9.16 7.65 9.05 8.1 8.74 8.4L7.21 9.93C8.32 12.4 10.6 14.68 13.07 15.79L14.6 14.26C14.9 13.95 15.35 13.84 15.75 13.99C17.14 14.51 18.61 14.84 20.11 14.96C20.61 15 21 15.42 21 15.92"
+                    stroke="#3FAE5A"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                +62 21 5050 1234
+              </div>
+              <div class="flex items-center gap-3 text-white/80 text-[15px]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 6L12 13L21 6"
+                    stroke="#3FAE5A"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="3"
+                    y="5"
+                    width="18"
+                    height="14"
+                    rx="2"
+                    stroke="#3FAE5A"
+                    stroke-width="1.8"
+                  />
+                </svg>
+                ekspor@tropicalharvest.co.id
+              </div>
+              <div class="flex items-center gap-3 text-white/80 text-[15px]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 21C16 17 19 13.5 19 9.5C19 5.9 15.9 3 12 3C8.1 3 5 5.9 5 9.5C5 13.5 8 17 12 21Z"
+                    stroke="#3FAE5A"
+                    stroke-width="1.8"
+                  />
+                  <circle
+                    cx="12"
+                    cy="9.5"
+                    r="2.5"
+                    stroke="#3FAE5A"
+                    stroke-width="1.8"
+                  />
+                </svg>
+                Terminal Ekspor Tanjung Priok, Jakarta
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="form-kontak"
+            class="reveal bg-white/[0.06] backdrop-blur-xl ring-1 ring-white/10 rounded-5xl p-7 sm:p-9 space-y-5"
+          >
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label
+                  for="cf-nama"
+                  class="block text-[13px] font-medium text-white/70 mb-2"
+                  >Nama lengkap</label
+                >
+                <input
+                  id="cf-nama"
+                  type="text"
+                  required
+                  placeholder="Nama Anda"
+                  class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
+                />
+              </div>
+              <div>
+                <label
+                  for="cf-perusahaan"
+                  class="block text-[13px] font-medium text-white/70 mb-2"
+                  >Perusahaan</label
+                >
+                <input
+                  id="cf-perusahaan"
+                  type="text"
+                  required
+                  placeholder="Nama perusahaan"
+                  class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="cf-email"
+                class="block text-[13px] font-medium text-white/70 mb-2"
+                >Email</label
+              >
+              <input
+                id="cf-email"
+                type="email"
+                required
+                placeholder="anda@perusahaan.com"
+                class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
+              />
+            </div>
+            <div>
+              <label
+                for="cf-produk"
+                class="block text-[13px] font-medium text-white/70 mb-2"
+                >Produk yang diminati</label
+              >
+              <select
+                id="cf-produk"
+                class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white focus:border-leaf focus:outline-none transition-colors"
+                style="
+                  background-color: rgba(255, 255, 255, 0.07);
+                  color-scheme: dark;
+                "
+              >
+                <option value="pisang" style="background: #1a1a1a">
+                  Pisang Mentah
+                </option>
+                <option value="kelengkeng" style="background: #1a1a1a">
+                  Kelengkeng
+                </option>
+                <option value="keduanya" style="background: #1a1a1a">
+                  Keduanya
+                </option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="cf-pesan"
+                class="block text-[13px] font-medium text-white/70 mb-2"
+                >Estimasi volume &amp; tujuan pengiriman</label
+              >
+              <textarea
+                id="cf-pesan"
+                rows="3"
+                placeholder="cth. 4 kontainer / bulan tujuan Rotterdam"
+                class="w-full resize-none rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="tombol-ripple tombol-gelap w-full bg-leaf hover:bg-leafd text-white font-semibold text-[15px] py-3.5 rounded-2xl transition-colors"
+            >
+              Kirim Permintaan
+            </button>
+            <p
+              id="pesan-sukses"
+              class="hidden text-leaf text-[14px] text-center font-medium"
+            >
+              Terima kasih — permintaan Anda telah terkirim. Kami akan
+              menghubungi Anda dalam satu hari kerja.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer class="bg-white border-t border-black/[0.06] pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6 pb-12"
+        >
+          <div class="lg:col-span-2">
+            <a
+              href="#atas"
+              class="flex items-center gap-2 font-semibold tracking-tight text-[15px] text-ink mb-4"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C12 2 6 6.5 6 13C6 17.4183 8.68629 21 12 21C15.3137 21 18 17.4183 18 13C18 6.5 12 2 12 2Z"
+                  fill="#3FAE5A"
+                />
+              </svg>
+              TropicalHarvest
+            </a>
+            <p class="text-slate text-[14.5px] leading-relaxed max-w-xs">
+              Pisang mentah dan kelengkeng premium, tumbuh di seluruh Indonesia
+              dan diekspor dengan presisi rantai dingin ke pembeli di seluruh
+              dunia.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-[13px] font-semibold text-ink mb-4">Produk</p>
+            <ul class="space-y-2.5 text-slate text-[14px]">
+              <li>
+                <a href="#produk" class="hover:text-leaf transition-colors"
+                  >Pisang Mentah</a
+                >
+              </li>
+              <li>
+                <a href="#produk" class="hover:text-leaf transition-colors"
+                  >Kelengkeng</a
+                >
+              </li>
+              <li>
+                <a href="#proses" class="hover:text-leaf transition-colors"
+                  >Proses Ekspor</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-[13px] font-semibold text-ink mb-4">Perusahaan</p>
+            <ul class="space-y-2.5 text-slate text-[14px]">
+              <li>
+                <a href="#mengapa" class="hover:text-leaf transition-colors"
+                  >Mengapa Kami</a
+                >
+              </li>
+              <li>
+                <a href="#galeri" class="hover:text-leaf transition-colors"
+                  >Galeri Kebun</a
+                >
+              </li>
+              <li>
+                <a href="#testimoni" class="hover:text-leaf transition-colors"
+                  >Pembeli Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-[13px] font-semibold text-ink mb-4">Hubungi Kami</p>
+            <ul class="space-y-2.5 text-slate text-[14px]">
+              <li>ekspor@tropicalharvest.co.id</li>
+              <li>+62 21 5050 1234</li>
+              <li>Tanjung Priok, Jakarta</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-black/[0.06] pt-7 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-slate/70 text-[13px]">
+            &copy; 2026 TropicalHarvest. Seluruh hak cipta dilindungi.
+          </p>
+          <div class="flex items-center gap-5">
+            <a
+              href="#"
+              aria-label="Instagram TropicalHarvest"
+              class="text-slate/60 hover:text-leaf transition-colors"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn TropicalHarvest"
+              class="text-slate/60 hover:text-leaf transition-colors"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M7.5 10V17M7.5 7.5V7.51"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M11.5 17V13C11.5 11.6 12.4 10.5 13.8 10.5C15.1 10.5 16 11.5 16 13V17"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="WhatsApp TropicalHarvest"
+              class="text-slate/60 hover:text-leaf transition-colors"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3C7.03 3 3 7.03 3 12C3 13.7 3.47 15.3 4.3 16.66L3.5 20.5L7.46 19.72C8.77 20.5 10.33 21 12 21Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
