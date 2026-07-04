@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "produk": "Produk",
+    "proses": "Proses Ekspor",
+    "mengapa": "Mengapa Kami",
+    "galeri": "Galeri Kebun",
+    "testimoni": "Pembeli",
+    "kontak": "Kontak",
+    "cta": "Minta Penawaran"
+  },
+  "hero": {
+    "label": "🌱 Hasil Tani Indonesia · Diekspor ke Seluruh Dunia",
+    "judul": "Produk Pertanian Indonesia Premium",
+    "deskripsi": "Buah dan hasil tani berkualitas tinggi dari petani lokal Indonesia, diekspor dengan presisi rantai dingin ke pasar global.",
+    "tombolProduk": "Jelajahi Produk",
+    "tombolProses": "Lihat Proses Ekspor",
+    "altGambar": "Kebun tropis yang rimbun saat senja keemasan"
+  },
+  "dipercaya": {
+    "label": "Dipercaya importir di negara-negara ASEAN"
+  },
+  "produk": {
+    "label": "Hasil Tani Indonesia Premium",
+    "judul": "Tiga produk unggulan. Satu standar kualitas.",
+    "deskripsi": "Langsung dari kebun petani lokal Indonesia ke pasar global. Dipanen, diproses, dan dikemas dengan standar ekspor internasional yang konsisten dan terpercaya.",
+    "pisang": {
+      "badge": "Pisang Mentah",
+      "alt": "Sisir pisang hijau mentah yang baru dipanen",
+      "judul": "Keras, hijau, siap perjalanan jauh",
+      "deskripsi": "Dipanen pada kematangan 75–80% sehingga tetap kokoh selama tiga minggu perjalanan laut dan matang sempurna saat tiba.",
+      "poin1": "Dipilih manual per sisir",
+      "poin2": "Rantai dingin 13,5°C",
+      "poin3": "Bersertifikat Global G.A.P."
+    },
+    "kelengkeng": {
+      "badge": "Kelengkeng",
+      "alt": "Kelompok buah kelengkeng segar",
+      "judul": "Buah kecil, standar sangat ketat",
+      "deskripsi": "Daging putih bening dengan rasa manis dalam, umur simpan diperpanjang lewat pendinginan cepat pasca panen.",
+      "poin1": "Kadar gula 22°Bx terverifikasi",
+      "poin2": "4 jam dari ladang ke ruang dingin",
+      "poin3": "100% dapat dilacak ke kebun asal"
+    },
+    "singkong": {
+      "badge": "Singkong Olahan",
+      "alt": "Singkong hasil tani Indonesia yang sudah dikupas, dipotong, dan dikemas rapi",
+      "judul": "Hasil tani Indonesia, siap bahan baku",
+      "deskripsi": "Singkong premium dari petani lokal Indonesia, diproses langsung di fasilitas kami dengan standar ekspor. Dikupas bersih, dicuci higienis, dipotong sesuai spesifikasi, dan dikemas rapi untuk langsung digunakan dalam produksi makanan.",
+      "poin1": "Dipanen dari kebun petani lokal Indonesia",
+      "poin2": "Dikupas, dicuci, dipotong di fasilitas kami",
+      "poin3": "Dikemas higienis, siap pakai untuk bahan baku"
+    }
+  },
+  "statistik": {
+    "negara": "Negara dilayani",
+    "ton": "Ton diekspor / tahun",
+    "ketepatan": "Tingkat ketepatan pengiriman",
+    "pengalaman": "Tahun pengalaman ekspor"
+  },
+  "proses": {
+    "label": "Dari Kebun ke Pelabuhan Tujuan",
+    "judul1": "Satu jalur.",
+    "judul2": "Tanpa jalan pintas.",
+    "deskripsi": "Setiap pengiriman melewati lima tahapan yang sama, tidak ada yang dilewatkan, tidak ada yang dikompromikan.",
+    "langkah1": {
+      "tahap": "Tahap 01",
+      "judul": "Panen di Kebun",
+      "deskripsi": "Dipanen manual oleh tim terlatih pada tingkat kematangan 75–80% cukup matang untuk kualitas rasa, cukup keras untuk perjalanan laut tiga minggu."
+    },
+    "langkah2": {
+      "tahap": "Tahap 02",
+      "judul": "Seleksi di Packhouse",
+      "deskripsi": "Setiap sisir disortir, dicuci, dan diperiksa dimensinya. Produk yang tidak memenuhi standar dipisahkan di sini bukan di kapal atau di pelabuhan tujuan."
+    },
+    "langkah3": {
+      "tahap": "Tahap 03",
+      "judul": "Penyimpanan Dingin",
+      "deskripsi": "Pra-dinginkan dalam 4 jam setelah panen. Disimpan pada 13,5°C dan dipantau terus-menerus hingga kontainer siap berangkat."
+    },
+    "langkah4": {
+      "tahap": "Tahap 04",
+      "judul": "Pelabuhan & Kontainer",
+      "deskripsi": "Dokumen bea cukai, fitosanitasi, dan sertifikat asal disiapkan lengkap. Kontainer disegel, dicatat, dan siap berlayar."
+    },
+    "langkah5": {
+      "tahap": "Tahap 05",
+      "judul": "Tiba di Tujuan",
+      "deskripsi": "Dikirim ke pelabuhan Anda tepat waktu. Seluruh rekam jejak lot tersedia, dari blok kebun asal hingga tanda terima akhir."
+    }
+  },
+  "mengapa": {
+    "label": "Mengapa B-Harvest",
+    "judul": "Kualitas yang tidak perlu Anda percaya begitu saja.",
+    "kartu1Judul": "Tersertifikasi di setiap tahap",
+    "kartu1Teks": "Global G.A.P., HACCP, dan dokumen fitosanitari menyertai setiap pengiriman bukan hanya yang pertama.",
+    "kartu2Judul": "Jadwal yang bisa Anda andalkan",
+    "kartu2Teks": "Slot keberangkatan mingguan dipesan jauh sebelumnya, sehingga perencanaan inventaris Anda tidak bergantung pada musim panen kami.",
+    "kartu3Judul": "Langsung dari petani, tanpa perantara",
+    "kartu3Teks": "Kami bekerja langsung dengan kebun mitra, berarti harga lebih kompetitif dan visibilitas penuh terhadap asal produk.",
+    "kartu4Judul": "Kualitas konsisten, lot demi lot",
+    "kartu4Teks": "Kriteria grading yang terstandar memastikan karton yang Anda terima di bulan Maret sama persis dengan yang dikirim bulan Oktober.",
+    "kartu5Judul": "Keterlacakan pengiriman penuh",
+    "kartu5Teks": "Lacak setiap kontainer dari packhouse ke pelabuhan dengan dokumentasi tingkat lot atas permintaan.",
+    "kartu6Judul": "Tim yang selalu menjawab",
+    "kartu6Teks": "Setiap pembeli mendapat koordinator ekspor khusus bukan sistem tiket yang mengantri."
+  },
+  "galeri": {
+    "label": "Galeri Kebun",
+    "judul": "Di sinilah semuanya bermula.",
+    "alt1": "Hamparan tanaman tropis di bawah langit biru",
+    "alt2": "Pekerja kebun merawat tanaman",
+    "alt3": "Buah segar berwarna-warni di pasar",
+    "alt4": "Buah dalam kontainer siap dikirim",
+    "alt5": "Interior gudang modern siap ekspor",
+    "alt6": "Close-up buah tropis segar",
+    "alt7": "Pelabuhan memuat kontainer ekspor di laut"
+  },
+  "testimoni": {
+    "label": "Testimoni Pembeli Global",
+    "judul": "Dipercaya oleh importir di negara-negara ASEAN.",
+    "deskripsi": "Testimoni pembeli kami tentang kualitas hasil tani Indonesia, konsistensi pengiriman, dan layanan profesional B-Harvest.",
+    "ariaPrev": "Testimoni sebelumnya",
+    "ariaNext": "Testimoni berikutnya",
+    "kutipan1": "Tiga tahun memesan, dan ketegasan buah saat tiba tidak pernah sekali pun tidak konsisten. Itulah inti dari hubungan bisnis ini.",
+    "kutipan2": "Skor Brix kelengkeng mereka adalah yang paling konsisten dari semua eksportir Asia Tenggara yang pernah kami uji.",
+    "kutipan3": "Kami beralihkan seluruh program pisang mentah kami kepada mereka setelah satu kontainer percobaan. Dokumentasinya saja menghemat berminggu-minggu proses bea cukai.",
+    "kutipan4": "Singkong olahan mereka sangat sempurna untuk kebutuhan industri makanan kami. Sudah dikupas, bersih, dan siap pakai langsung. Efisiensi biaya produksi kami meningkat 30%.",
+    "kutipan5": "Hasil tani Indonesia yang berkualitas tinggi. Packaging rapih, dokumentasi lengkap, dan customer service yang responsif. Partner terbaik kami di Asia.",
+    "kutipan6": "Kepercayaan pada setiap pengiriman adalah kunci. Mereka tidak pernah mengirimkan produk yang tidak memenuhi standar. Konsistensi kualitas hasil tani mereka luar biasa.",
+    "kutipan7": "Dari kebun langsung ke tangan pembeli dengan presisi yang sempurna. Rantai dingin mereka menjaga kesegaran hasil tani dengan eksklusif. Recommended!",
+    "kutipan8": "Produk hasil tani Indonesia yang kami terima selalu dalam kondisi prima. Petani lokal Indonesia yang professional, dikelola oleh B-Harvest yang terpercaya."
+  },
+  "kontak": {
+    "label": "Hubungi Tim Ekspor",
+    "judul": "Beritahu kami volume Anda. Sisanya kami urus.",
+    "deskripsi": "Kirimkan detail kebutuhan Anda dan tim ekspor kami akan merespons dalam satu hari kerja dengan penawaran harga dan jadwal pelayaran terdekat.",
+    "alamat": "Tanjung Priok, Jakarta, Indonesia",
+    "form": {
+      "labelNama": "Nama lengkap",
+      "placeholderNama": "Nama Anda",
+      "labelPerusahaan": "Perusahaan",
+      "placeholderPerusahaan": "Nama perusahaan",
+      "labelEmail": "Email",
+      "placeholderEmail": "anda@perusahaan.com",
+      "labelProduk": "Produk yang diminati",
+      "opsiPisang": "Pisang Mentah",
+      "opsiKelengkeng": "Kelengkeng",
+      "opsiSingkong": "Singkong Olahan",
+      "opsiSemua": "Semuanya",
+      "labelPesan": "Estimasi volume & tujuan pengiriman",
+      "placeholderPesan": "cth. 4 kontainer / bulan tujuan Rotterdam",
+      "tombolKirim": "Kirim Permintaan",
+      "pesanSukses": "Terima kasih. permintaan Anda telah terkirim. Kami akan menghubungi Anda dalam satu hari kerja."
+    }
+  },
+  "footer": {
+    "deskripsi": "Pisang mentah dan kelengkeng premium, tumbuh di seluruh Indonesia dan diekspor dengan presisi rantai dingin ke pembeli di negara-negara ASEAN.",
+    "kolomProduk": "Produk",
+    "linkPisang": "Pisang Mentah",
+    "linkKelengkeng": "Kelengkeng",
+    "linkSingkong": "Singkong Olahan",
+    "kolomPerusahaan": "Perusahaan",
+    "linkMengapa": "Mengapa Kami",
+    "linkGaleri": "Galeri Kebun",
+    "linkTestimoni": "Pembeli Kami",
+    "linkProses": "Proses Ekspor",
+    "kolomKontak": "Hubungi Kami",
+    "alamat": "Tanjung Priok, Jakarta, Indonesia",
+    "hakCipta": "© 2026 B-Harvest. Seluruh hak cipta dilindungi.",
+    "ariaInstagram": "Instagram B-Harvest",
+    "ariaLinkedin": "LinkedIn B-Harvest",
+    "ariaWhatsapp": "WhatsApp B-Harvest"
+  }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta -->
-    <title>B-Harvest — Ekspor Hasil Tani Indonesia ke Negara ASEAN</title>
+    <title>B-Harvest - Ekspor Hasil Tani Indonesia ke Negara ASEAN</title>
     <meta
       name="description"
       content="B-Harvest mengekspor hasil tani premium dari petani lokal Indonesia: pisang mentah, kelengkeng, dan singkong olahan. Kualitas tinggi, rantai dingin presisi, dikirim ke negara ASEAN dan sekitarnya."
@@ -16,8 +16,7 @@
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="B-Harvest" />
-    <meta name="theme-color" content="#111111" />
-    <link rel="canonical" href="https://bharvest.co.id/" />
+    <link rel="canonical" href="https://b-harvest.vercel.app/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -29,7 +28,7 @@
       property="og:description"
       content="Ekspor hasil tani Indonesia premium: pisang, kelengkeng, dan singkong olahan. Langsung dari petani lokal ke negara ASEAN dengan standar kualitas internasional."
     />
-    <meta property="og:url" content="https://bharvest.co.id/" />
+    <meta property="og:url" content="https://b-harvest.vercel.app/" />
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -109,35 +108,96 @@
         </a>
 
         <div class="hidden lg:flex items-center gap-9 text-[13px] font-medium">
-          <a href="#produk" class="nav-link">Produk</a>
-          <a href="#proses" class="nav-link">Proses Ekspor</a>
-          <a href="#mengapa" class="nav-link">Mengapa Kami</a>
-          <a href="#galeri" class="nav-link">Galeri Kebun</a>
-          <a href="#testimoni" class="nav-link">Pembeli</a>
-          <a href="#kontak" class="nav-link">Kontak</a>
+          <a href="#produk" class="nav-link" data-i18n="nav.produk">Produk</a>
+          <a href="#proses" class="nav-link" data-i18n="nav.proses"
+            >Proses Ekspor</a
+          >
+          <a href="#mengapa" class="nav-link" data-i18n="nav.mengapa"
+            >Mengapa Kami</a
+          >
+          <a href="#galeri" class="nav-link" data-i18n="nav.galeri"
+            >Galeri Kebun</a
+          >
+          <a href="#testimoni" class="nav-link" data-i18n="nav.testimoni"
+            >Pembeli</a
+          >
+          <a href="#kontak" class="nav-link" data-i18n="nav.kontak">Kontak</a>
         </div>
 
-        <a
-          href="#kontak"
-          class="tombol-ripple tombol-gelap hidden lg:inline-flex items-center gap-1.5 bg-leaf text-white text-[13px] font-semibold px-4 py-2 rounded-full hover:bg-leafd transition-colors"
-        >
-          Minta Penawaran
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
+        <div class="hidden lg:flex items-center gap-4">
+          <!-- Language Switcher -->
+          <div
+            class="flex items-center gap-1 text-[12px] font-semibold bg-white/10 rounded-full p-1"
           >
-            <path
-              d="M5 12H19M19 12L13 6M19 12L13 18"
-              stroke="currentColor"
-              stroke-width="2.2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
+            <button
+              data-lang-switch="id"
+              aria-label="Bahasa Indonesia"
+              class="lang-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-colors"
+            >
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 24 18"
+                aria-hidden="true"
+                class="rounded-[2px] shrink-0"
+              >
+                <rect width="24" height="9" fill="#E70011" />
+                <rect y="9" width="24" height="9" fill="#FFFFFF" />
+              </svg>
+              <span>ID</span>
+            </button>
+            <button
+              data-lang-switch="en"
+              aria-label="English"
+              class="lang-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-colors"
+            >
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 24 18"
+                aria-hidden="true"
+                class="rounded-[2px] shrink-0"
+              >
+                <rect width="24" height="18" fill="#012169" />
+                <path
+                  d="M0 0L24 18M24 0L0 18"
+                  stroke="#FFFFFF"
+                  stroke-width="2.4"
+                />
+                <path
+                  d="M0 0L24 18M24 0L0 18"
+                  stroke="#C8102E"
+                  stroke-width="1.2"
+                />
+                <path d="M12 0V18M0 9H24" stroke="#FFFFFF" stroke-width="4" />
+                <path d="M12 0V18M0 9H24" stroke="#C8102E" stroke-width="2.4" />
+              </svg>
+              <span>EN</span>
+            </button>
+          </div>
+
+          <a
+            href="#kontak"
+            class="tombol-ripple tombol-gelap inline-flex items-center gap-1.5 bg-leaf text-white text-[13px] font-semibold px-4 py-2 rounded-full hover:bg-leafd transition-colors"
+          >
+            <span data-i18n="nav.cta">Minta Penawaran</span>
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12H19M19 12L13 6M19 12L13 18"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
 
         <button
           id="tombol-menu"
@@ -170,34 +230,96 @@
           <a
             href="#produk"
             class="py-3 text-[15px] font-medium border-b border-black/5"
+            data-i18n="nav.produk"
             >Produk</a
           >
           <a
             href="#proses"
             class="py-3 text-[15px] font-medium border-b border-black/5"
+            data-i18n="nav.proses"
             >Proses Ekspor</a
           >
           <a
             href="#mengapa"
             class="py-3 text-[15px] font-medium border-b border-black/5"
+            data-i18n="nav.mengapa"
             >Mengapa Kami</a
           >
           <a
             href="#galeri"
             class="py-3 text-[15px] font-medium border-b border-black/5"
+            data-i18n="nav.galeri"
             >Galeri Kebun</a
           >
           <a
             href="#testimoni"
             class="py-3 text-[15px] font-medium border-b border-black/5"
+            data-i18n="nav.testimoni"
             >Pembeli</a
           >
-          <a href="#kontak" class="py-3 text-[15px] font-medium">Kontak</a>
+          <a
+            href="#kontak"
+            class="py-3 text-[15px] font-medium"
+            data-i18n="nav.kontak"
+            >Kontak</a
+          >
+
+          <!-- Language Switcher mobile -->
+          <div
+            class="flex items-center gap-1 text-[12px] font-semibold bg-black/5 rounded-full p-1 w-fit mt-3"
+          >
+            <button
+              data-lang-switch="id"
+              aria-label="Bahasa Indonesia"
+              class="lang-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-colors"
+            >
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 24 18"
+                aria-hidden="true"
+                class="rounded-[2px] shrink-0"
+              >
+                <rect width="24" height="9" fill="#E70011" />
+                <rect y="9" width="24" height="9" fill="#FFFFFF" />
+              </svg>
+              <span>ID</span>
+            </button>
+            <button
+              data-lang-switch="en"
+              aria-label="English"
+              class="lang-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-colors"
+            >
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 24 18"
+                aria-hidden="true"
+                class="rounded-[2px] shrink-0"
+              >
+                <rect width="24" height="18" fill="#012169" />
+                <path
+                  d="M0 0L24 18M24 0L0 18"
+                  stroke="#FFFFFF"
+                  stroke-width="2.4"
+                />
+                <path
+                  d="M0 0L24 18M24 0L0 18"
+                  stroke="#C8102E"
+                  stroke-width="1.2"
+                />
+                <path d="M12 0V18M0 9H24" stroke="#FFFFFF" stroke-width="4" />
+                <path d="M12 0V18M0 9H24" stroke="#C8102E" stroke-width="2.4" />
+              </svg>
+              <span>EN</span>
+            </button>
+          </div>
+
           <a
             href="#kontak"
             class="mt-3 text-center bg-leaf text-white text-[14px] font-semibold px-4 py-3 rounded-full"
           >
-            Minta Penawaran
+            <span data-i18n="nav.cta">Minta Penawaran</span>
           </a>
         </div>
       </div>
@@ -215,6 +337,7 @@
           id="gambar-hero"
           src="https://images.unsplash.com/photo-1624033441874-82f56d494d83?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Kebun tropis yang rimbun saat senja keemasan"
+          data-i18n-alt="hero.altGambar"
           class="parallax-img w-full h-full object-cover opacity-[0.92] scale-[1.08]"
         />
         <div
@@ -224,20 +347,25 @@
           class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"
         ></div>
       </div>
-
       <div
         class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6"
       >
-        <p class="reveal label-seksi mb-5" style="color: #8fe0a8">
+        <p
+          class="reveal label-seksi mb-5"
+          style="color: #8fe0a8"
+          data-i18n="hero.label"
+        >
           🌱 Hasil Tani Indonesia · Diekspor ke Seluruh Dunia
         </p>
         <h1
           class="reveal text-balance text-white font-extrabold tracking-tightest leading-[0.98] text-[44px] sm:text-[64px] lg:text-[84px]"
+          data-i18n="hero.judul"
         >
           Produk Pertanian Indonesia Premium
         </h1>
         <p
           class="reveal text-white/80 mt-6 max-w-xl text-[17px] sm:text-[19px] leading-relaxed"
+          data-i18n="hero.deskripsi"
         >
           Buah dan hasil tani berkualitas tinggi dari petani lokal Indonesia,
           diekspor dengan presisi rantai dingin ke pasar global.
@@ -246,12 +374,15 @@
           <a
             href="#produk"
             class="tombol-ripple tombol-gelap inline-flex items-center gap-2 bg-leaf hover:bg-leafd text-white text-[15px] font-semibold px-7 py-3.5 rounded-full transition-colors"
+            data-i18n="hero.tombolProduk"
           >
             Jelajahi Produk
           </a>
+
           <a
             href="#proses"
             class="tombol-ripple tombol-terang inline-flex items-center gap-2 bg-white/10 hover:bg-white/[0.16] text-white text-[15px] font-semibold px-7 py-3.5 rounded-full backdrop-blur-md transition-colors ring-1 ring-white/20"
+            data-i18n="hero.tombolProses"
           >
             Lihat Proses Ekspor
           </a>
@@ -269,6 +400,7 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <p
           class="reveal text-center text-[12px] tracking-[0.18em] uppercase text-slate font-semibold mb-9"
+          data-i18n="dipercaya.label"
         >
           Dipercaya importir di negara-negara ASEAN
         </p>
@@ -340,13 +472,19 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <!-- Header seksi -->
         <div class="reveal text-center max-w-2xl mx-auto mb-14 lg:mb-18">
-          <p class="label-seksi mb-4">Hasil Tani Indonesia Premium</p>
+          <p class="label-seksi mb-4" data-i18n="produk.label">
+            Hasil Tani Indonesia Premium
+          </p>
           <h2
             class="text-balance font-extrabold tracking-tightest leading-[1.05] text-[32px] sm:text-[44px] text-ink"
+            data-i18n="produk.judul"
           >
             Tiga produk unggulan. Satu standar kualitas.
           </h2>
-          <p class="text-slate text-[16px] mt-4 leading-relaxed">
+          <p
+            class="text-slate text-[16px] mt-4 leading-relaxed"
+            data-i18n="produk.deskripsi"
+          >
             Langsung dari kebun petani lokal Indonesia ke pasar global. Dipanen,
             diproses, dan dikemas dengan standar ekspor internasional yang
             konsisten dan terpercaya.
@@ -365,25 +503,31 @@
               <img
                 src="https://plus.unsplash.com/premium_photo-1663047777831-4b65f1489ab0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Sisir pisang hijau mentah yang baru dipanen"
+                data-i18n-alt="produk.pisang.alt"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
               <span
                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-[11px] font-semibold tracking-wide uppercase text-ink"
+                data-i18n="produk.pisang.badge"
               >
                 Pisang Mentah
               </span>
             </div>
-
             <div class="p-7">
-              <h3 class="font-bold text-ink text-[19px] mb-2 leading-snug">
+              <h3
+                class="font-bold text-ink text-[19px] mb-2 leading-snug"
+                data-i18n="produk.pisang.judul"
+              >
                 Keras, hijau, siap perjalanan jauh
               </h3>
-              <p class="text-slate text-[14.5px] leading-relaxed mb-5">
+              <p
+                class="text-slate text-[14.5px] leading-relaxed mb-5"
+                data-i18n="produk.pisang.deskripsi"
+              >
                 Dipanen pada kematangan 75–80% sehingga tetap kokoh selama tiga
                 minggu perjalanan laut dan matang sempurna saat tiba.
               </p>
-
               <ul class="flex flex-col gap-2.5">
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -402,7 +546,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Dipilih manual per sisir
+                  <span data-i18n="produk.pisang.poin1"
+                    >Dipilih manual per sisir</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -421,7 +567,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Rantai dingin 13,5°C
+                  <span data-i18n="produk.pisang.poin2"
+                    >Rantai dingin 13,5°C</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -440,7 +588,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Bersertifikat GlobalG.A.P.
+                  <span data-i18n="produk.pisang.poin3"
+                    >Bersertifikat GlobalG.A.P.</span
+                  >
                 </li>
               </ul>
             </div>
@@ -455,25 +605,31 @@
               <img
                 src="https://images.unsplash.com/photo-1728462843704-1225f0f858c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Kelompok buah kelengkeng segar"
+                data-i18n-alt="produk.kelengkeng.alt"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
               <span
                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-[11px] font-semibold tracking-wide uppercase text-ink"
+                data-i18n="produk.kelengkeng.badge"
               >
                 Kelengkeng
               </span>
             </div>
-
             <div class="p-7">
-              <h3 class="font-bold text-ink text-[19px] mb-2 leading-snug">
+              <h3
+                class="font-bold text-ink text-[19px] mb-2 leading-snug"
+                data-i18n="produk.kelengkeng.judul"
+              >
                 Buah kecil, standar sangat ketat
               </h3>
-              <p class="text-slate text-[14.5px] leading-relaxed mb-5">
+              <p
+                class="text-slate text-[14.5px] leading-relaxed mb-5"
+                data-i18n="produk.kelengkeng.deskripsi"
+              >
                 Daging putih bening dengan rasa manis dalam, umur simpan
                 diperpanjang lewat pendinginan cepat pasca panen.
               </p>
-
               <ul class="flex flex-col gap-2.5">
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -492,7 +648,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Kadar gula 22°Bx terverifikasi
+                  <span data-i18n="produk.kelengkeng.poin1"
+                    >Kadar gula 22°Bx terverifikasi</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -511,7 +669,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  4 jam dari ladang ke ruang dingin
+                  <span data-i18n="produk.kelengkeng.poin2"
+                    >4 jam dari ladang ke ruang dingin</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -530,7 +690,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  100% dapat dilacak ke kebun asal
+                  <span data-i18n="produk.kelengkeng.poin3"
+                    >100% dapat dilacak ke kebun asal</span
+                  >
                 </li>
               </ul>
             </div>
@@ -545,27 +707,33 @@
               <img
                 src="https://plus.unsplash.com/premium_photo-1725467479101-556af13a7220?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Singkong hasil tani Indonesia yang sudah dikupas, dipotong, dan dikemas rapi"
+                data-i18n-alt="produk.singkong.alt"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
               <span
                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-[11px] font-semibold tracking-wide uppercase text-ink"
+                data-i18n="produk.singkong.badge"
               >
                 Singkong Olahan
               </span>
             </div>
-
             <div class="p-7">
-              <h3 class="font-bold text-ink text-[19px] mb-2 leading-snug">
+              <h3
+                class="font-bold text-ink text-[19px] mb-2 leading-snug"
+                data-i18n="produk.singkong.judul"
+              >
                 Hasil tani Indonesia, siap bahan baku
               </h3>
-              <p class="text-slate text-[14.5px] leading-relaxed mb-5">
+              <p
+                class="text-slate text-[14.5px] leading-relaxed mb-5"
+                data-i18n="produk.singkong.deskripsi"
+              >
                 Singkong premium dari petani lokal Indonesia, diproses langsung
                 di fasilitas kami dengan standar ekspor. Dikupas bersih, dicuci
                 higienis, dipotong sesuai spesifikasi, dan dikemas rapi untuk
                 langsung digunakan dalam produksi makanan.
               </p>
-
               <ul class="flex flex-col gap-2.5">
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -584,7 +752,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Dipanen dari kebun petani lokal Indonesia
+                  <span data-i18n="produk.singkong.poin1"
+                    >Dipanen dari kebun petani lokal Indonesia</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -603,7 +773,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Dikupas, dicuci, dipotong di fasilitas kami
+                  <span data-i18n="produk.singkong.poin2"
+                    >Dikupas, dicuci, dipotong di fasilitas kami</span
+                  >
                 </li>
                 <li class="flex items-center gap-2.5 text-[13.5px] text-ink">
                   <svg
@@ -622,7 +794,9 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  Dikemas higienis, siap pakai untuk bahan baku
+                  <span data-i18n="produk.singkong.poin3"
+                    >Dikemas higienis, siap pakai untuk bahan baku</span
+                  >
                 </li>
               </ul>
             </div>
@@ -638,16 +812,24 @@
       <div class="max-w-6xl mx-auto px-6 lg:px-10">
         <!-- Header -->
         <div class="reveal text-center max-w-2xl mx-auto mb-16 lg:mb-20">
-          <p class="label-seksi mb-4" style="color: #6fcf8b">
+          <p
+            class="label-seksi mb-4"
+            style="color: #6fcf8b"
+            data-i18n="proses.label"
+          >
             Dari Kebun ke Pelabuhan Tujuan
           </p>
           <h2
             class="text-balance font-extrabold tracking-tightest leading-[1.05] text-[34px] sm:text-[48px] text-white"
           >
-            Satu jalur.<br class="hidden sm:block" />
-            Tanpa jalan pintas.
+            <span data-i18n="proses.judul1">Satu jalur.</span
+            ><br class="hidden sm:block" />
+            <span data-i18n="proses.judul2">Tanpa jalan pintas.</span>
           </h2>
-          <p class="text-white/55 text-[16px] mt-4 leading-relaxed">
+          <p
+            class="text-white/55 text-[16px] mt-4 leading-relaxed"
+            data-i18n="proses.deskripsi"
+          >
             Setiap pengiriman melewati lima tahapan yang sama, tidak ada yang
             dilewatkan, tidak ada yang dikompromikan.
           </p>
@@ -655,12 +837,10 @@
 
         <!-- Steps -->
         <div class="reveal relative max-w-4xl mx-auto">
-          <!-- Garis vertikal penghubung -->
           <div
             class="absolute left-7 top-8 bottom-8 w-px bg-gradient-to-b from-leaf via-leaf/30 to-transparent hidden sm:block"
             aria-hidden="true"
           ></div>
-
           <ol class="flex flex-col gap-0" role="list">
             <!-- Step 1: Kebun -->
             <li class="relative flex items-start gap-6 sm:gap-8 pb-10">
@@ -695,13 +875,20 @@
                 <div class="flex items-center gap-3 mb-1.5">
                   <span
                     class="text-leaf text-[11px] font-bold tracking-[0.18em] uppercase"
+                    data-i18n="proses.langkah1.tahap"
                     >Tahap 01</span
                   >
                 </div>
-                <h3 class="text-white font-bold text-[20px] mb-2 leading-snug">
+                <h3
+                  class="text-white font-bold text-[20px] mb-2 leading-snug"
+                  data-i18n="proses.langkah1.judul"
+                >
                   Panen di Kebun
                 </h3>
-                <p class="text-white/55 text-[14.5px] leading-relaxed max-w-lg">
+                <p
+                  class="text-white/55 text-[14.5px] leading-relaxed max-w-lg"
+                  data-i18n="proses.langkah1.deskripsi"
+                >
                   Dipanen manual oleh tim terlatih pada tingkat kematangan
                   75–80% cukup matang untuk kualitas rasa, cukup keras untuk
                   perjalanan laut tiga minggu.
@@ -742,13 +929,20 @@
                 <div class="flex items-center gap-3 mb-1.5">
                   <span
                     class="text-leaf text-[11px] font-bold tracking-[0.18em] uppercase"
+                    data-i18n="proses.langkah2.tahap"
                     >Tahap 02</span
                   >
                 </div>
-                <h3 class="text-white font-bold text-[20px] mb-2 leading-snug">
+                <h3
+                  class="text-white font-bold text-[20px] mb-2 leading-snug"
+                  data-i18n="proses.langkah2.judul"
+                >
                   Seleksi di Packhouse
                 </h3>
-                <p class="text-white/55 text-[14.5px] leading-relaxed max-w-lg">
+                <p
+                  class="text-white/55 text-[14.5px] leading-relaxed max-w-lg"
+                  data-i18n="proses.langkah2.deskripsi"
+                >
                   Setiap sisir disortir, dicuci, dan diperiksa dimensinya.
                   Produk yang tidak memenuhi standar dipisahkan di sini bukan di
                   kapal atau di pelabuhan tujuan.
@@ -799,13 +993,20 @@
                 <div class="flex items-center gap-3 mb-1.5">
                   <span
                     class="text-leaf text-[11px] font-bold tracking-[0.18em] uppercase"
+                    data-i18n="proses.langkah3.tahap"
                     >Tahap 03</span
                   >
                 </div>
-                <h3 class="text-white font-bold text-[20px] mb-2 leading-snug">
+                <h3
+                  class="text-white font-bold text-[20px] mb-2 leading-snug"
+                  data-i18n="proses.langkah3.judul"
+                >
                   Penyimpanan Dingin
                 </h3>
-                <p class="text-white/55 text-[14.5px] leading-relaxed max-w-lg">
+                <p
+                  class="text-white/55 text-[14.5px] leading-relaxed max-w-lg"
+                  data-i18n="proses.langkah3.deskripsi"
+                >
                   Pra-dinginkan dalam 4 jam setelah panen. Disimpan pada 13,5°C
                   dan dipantau terus-menerus hingga kontainer siap berangkat.
                 </p>
@@ -854,13 +1055,20 @@
                 <div class="flex items-center gap-3 mb-1.5">
                   <span
                     class="text-leaf text-[11px] font-bold tracking-[0.18em] uppercase"
+                    data-i18n="proses.langkah4.tahap"
                     >Tahap 04</span
                   >
                 </div>
-                <h3 class="text-white font-bold text-[20px] mb-2 leading-snug">
+                <h3
+                  class="text-white font-bold text-[20px] mb-2 leading-snug"
+                  data-i18n="proses.langkah4.judul"
+                >
                   Pelabuhan & Kontainer
                 </h3>
-                <p class="text-white/55 text-[14.5px] leading-relaxed max-w-lg">
+                <p
+                  class="text-white/55 text-[14.5px] leading-relaxed max-w-lg"
+                  data-i18n="proses.langkah4.deskripsi"
+                >
                   Dokumen bea cukai, fitosanitasi, dan sertifikat asal disiapkan
                   lengkap. Kontainer disegel, dicatat, dan siap berlayar.
                 </p>
@@ -905,13 +1113,20 @@
                 <div class="flex items-center gap-3 mb-1.5">
                   <span
                     class="text-leaf text-[11px] font-bold tracking-[0.18em] uppercase"
+                    data-i18n="proses.langkah5.tahap"
                     >Tahap 05</span
                   >
                 </div>
-                <h3 class="text-white font-bold text-[20px] mb-2 leading-snug">
+                <h3
+                  class="text-white font-bold text-[20px] mb-2 leading-snug"
+                  data-i18n="proses.langkah5.judul"
+                >
                   Tiba di Tujuan
                 </h3>
-                <p class="text-white/55 text-[14.5px] leading-relaxed max-w-lg">
+                <p
+                  class="text-white/55 text-[14.5px] leading-relaxed max-w-lg"
+                  data-i18n="proses.langkah5.deskripsi"
+                >
                   Dikirim ke pelabuhan Anda tepat waktu. Seluruh rekam jejak lot
                   tersedia, dari blok kebun asal hingga tanda terima akhir.
                 </p>
@@ -937,7 +1152,9 @@
             >
               0
             </p>
-            <p class="text-slate text-[14px] mt-2">Negara dilayani</p>
+            <p class="text-slate text-[14px] mt-2" data-i18n="statistik.negara">
+              Negara dilayani
+            </p>
           </div>
           <div>
             <p
@@ -945,7 +1162,9 @@
             >
               <span data-jumlah="12400">0</span>+
             </p>
-            <p class="text-slate text-[14px] mt-2">Ton diekspor / tahun</p>
+            <p class="text-slate text-[14px] mt-2" data-i18n="statistik.ton">
+              Ton diekspor / tahun
+            </p>
           </div>
           <div>
             <p
@@ -953,7 +1172,10 @@
             >
               <span data-jumlah="98">0</span>%
             </p>
-            <p class="text-slate text-[14px] mt-2">
+            <p
+              class="text-slate text-[14px] mt-2"
+              data-i18n="statistik.ketepatan"
+            >
               Tingkat ketepatan pengiriman
             </p>
           </div>
@@ -964,7 +1186,12 @@
             >
               0
             </p>
-            <p class="text-slate text-[14px] mt-2">Tahun pengalaman ekspor</p>
+            <p
+              class="text-slate text-[14px] mt-2"
+              data-i18n="statistik.pengalaman"
+            >
+              Tahun pengalaman ekspor
+            </p>
           </div>
         </div>
       </div>
@@ -976,14 +1203,16 @@
     <section id="mengapa" class="bg-mist py-24 lg:py-32">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <div class="reveal text-center max-w-2xl mx-auto mb-16">
-          <p class="label-seksi mb-4">Mengapa B-Harvest</p>
+          <p class="label-seksi mb-4" data-i18n="mengapa.label">
+            Mengapa B-Harvest
+          </p>
           <h2
             class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+            data-i18n="mengapa.judul"
           >
             Kualitas yang tidak perlu Anda percaya begitu saja.
           </h2>
         </div>
-
         <div
           class="reveal-stagger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
@@ -1013,10 +1242,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu1Judul"
+            >
               Tersertifikasi di setiap tahap
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu1Teks"
+            >
               Global G.A.P., HACCP, dan dokumen fitosanitari menyertai setiap
               pengiriman bukan hanya yang pertama.
             </p>
@@ -1049,10 +1284,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu2Judul"
+            >
               Jadwal yang bisa Anda andalkan
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu2Teks"
+            >
               Slot keberangkatan mingguan dipesan jauh sebelumnya, sehingga
               perencanaan inventaris Anda tidak bergantung pada musim panen
               kami.
@@ -1086,10 +1327,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu3Judul"
+            >
               Langsung dari petani, tanpa perantara
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu3Teks"
+            >
               Kami bekerja langsung dengan kebun mitra, berarti harga lebih
               kompetitif dan visibilitas penuh terhadap asal produk.
             </p>
@@ -1122,10 +1369,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu4Judul"
+            >
               Kualitas konsisten, lot demi lot
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu4Teks"
+            >
               Kriteria grading yang terstandar memastikan karton yang Anda
               terima di bulan Maret sama persis dengan yang dikirim bulan
               Oktober.
@@ -1157,10 +1410,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu5Judul"
+            >
               Keterlacakan pengiriman penuh
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu5Teks"
+            >
               Lacak setiap kontainer dari packhouse ke pelabuhan dengan
               dokumentasi tingkat lot atas permintaan.
             </p>
@@ -1185,10 +1444,16 @@
                 />
               </svg>
             </div>
-            <h3 class="font-semibold text-ink text-[18px] mb-2.5">
+            <h3
+              class="font-semibold text-ink text-[18px] mb-2.5"
+              data-i18n="mengapa.kartu6Judul"
+            >
               Tim yang selalu menjawab
             </h3>
-            <p class="text-slate text-[15px] leading-relaxed">
+            <p
+              class="text-slate text-[15px] leading-relaxed"
+              data-i18n="mengapa.kartu6Teks"
+            >
               Setiap pembeli mendapat koordinator ekspor khusus bukan sistem
               tiket yang mengantri.
             </p>
@@ -1203,13 +1468,15 @@
     <section id="galeri" class="bg-white py-24 lg:py-32">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <div class="reveal text-center max-w-2xl mx-auto mb-16">
-          <p class="label-seksi mb-4">Galeri Kebun</p>
+          <p class="label-seksi mb-4" data-i18n="galeri.label">Galeri Kebun</p>
           <h2
             class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+            data-i18n="galeri.judul"
           >
             Di sinilah semuanya bermula.
           </h2>
         </div>
+
         <div
           class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 auto-rows-[180px] lg:auto-rows-[220px]"
         >
@@ -1219,66 +1486,79 @@
             <img
               src="https://images.unsplash.com/photo-1624033441874-82f56d494d83?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Hamparan tanaman tropis di bawah langit biru"
+              data-i18n-alt="galeri.alt1"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
           >
             <img
               src="https://images.unsplash.com/photo-1516350493928-332831d464bc?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Pekerja kebun merawat tanaman"
+              data-i18n-alt="galeri.alt2"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
           >
             <img
               src="https://images.unsplash.com/photo-1609780447631-05b93e5a88ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVhaCUyMHBhc2FyfGVufDB8fDB8fHww"
               alt="Buah segar berwarna-warni di pasar"
+              data-i18n-alt="galeri.alt3"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card row-span-2 col-span-1"
           >
             <img
               src="https://plus.unsplash.com/premium_photo-1764187004573-bac79bb65965?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI4fHx8ZW58MHx8fHx8"
               alt="Buah dalam kontainer siap dikirim"
+              data-i18n-alt="galeri.alt4"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card col-span-2"
           >
             <img
               src="https://plus.unsplash.com/premium_photo-1764099530176-58a8342c5fbe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Interior gudang modern siap ekspor"
+              data-i18n-alt="galeri.alt5"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
           >
             <img
               src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29udGFpbmVyJTIwYnVhaCUyMGltcG9yfGVufDB8fDB8fHww"
               alt="Close-up buah tropis segar"
+              data-i18n-alt="galeri.alt6"
               class="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
+
           <div
             class="item-galeri zoom-gambar relative rounded-4xl overflow-hidden shadow-card"
           >
             <img
               src="https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFpbmVyJTIwcGVsYWJ1aGFufGVufDB8fDB8fHww"
               alt="pelabuhan memuat kontainer ekspor di laut"
+              data-i18n-alt="galeri.alt7"
               class="w-full h-full object-cover"
               loading="lazy"
             />
@@ -1286,21 +1566,30 @@
         </div>
       </div>
     </section>
-
+    <!-- ============================================================
+        TESTIMONI PEMBELI
+        ============================================================ -->
     <section id="testimoni" class="bg-mist py-24 lg:py-32 overflow-hidden">
       <div class="max-w-4xl mx-auto px-6 lg:px-10">
         <div class="reveal text-center mb-14">
-          <p class="label-seksi mb-4">Testimoni Pembeli Global</p>
+          <p class="label-seksi mb-4" data-i18n="testimoni.label">
+            Testimoni Pembeli Global
+          </p>
           <h2
             class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[34px] sm:text-[48px] text-ink"
+            data-i18n="testimoni.judul"
           >
             Dipercaya oleh importir di negara-negara ASEAN.
           </h2>
-          <p class="text-slate text-[15px] mt-3 leading-relaxed">
+          <p
+            class="text-slate text-[15px] mt-3 leading-relaxed"
+            data-i18n="testimoni.deskripsi"
+          >
             Testimoni pembeli kami tentang kualitas hasil tani Indonesia,
             konsistensi pengiriman, dan layanan profesional B-Harvest.
           </p>
         </div>
+
         <div class="reveal relative">
           <div class="overflow-hidden">
             <div id="jalur-testi" class="jalur-testi flex">
@@ -1309,6 +1598,7 @@
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan1"
                   >
                     "Tiga tahun memesan, dan ketegasan buah saat tiba tidak
                     pernah sekali pun tidak konsisten. Itulah inti dari hubungan
@@ -1322,11 +1612,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 2 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan2"
                   >
                     "Skor Brix kelengkeng mereka adalah yang paling konsisten
                     dari semua eksportir Asia Tenggara yang pernah kami uji."
@@ -1339,11 +1631,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 3 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan3"
                   >
                     "Kami beralihkan seluruh program pisang mentah kami kepada
                     mereka setelah satu kontainer percobaan. Dokumentasinya saja
@@ -1357,11 +1651,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 4 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan4"
                   >
                     "Singkong olahan mereka sangat sempurna untuk kebutuhan
                     industri makanan kami. Sudah dikupas, bersih, dan siap pakai
@@ -1375,11 +1671,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 5 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan5"
                   >
                     "Hasil tani Indonesia yang berkualitas tinggi. Packaging
                     rapih, dokumentasi lengkap, dan customer service yang
@@ -1393,11 +1691,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 6 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan6"
                   >
                     "Kepercayaan pada setiap pengiriman adalah kunci. Mereka
                     tidak pernah mengirimkan produk yang tidak memenuhi standar.
@@ -1411,11 +1711,13 @@
                   </p>
                 </div>
               </div>
+
               <!-- Testimoni 7 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan7"
                   >
                     "Dari kebun langsung ke tangan pembeli dengan presisi yang
                     sempurna. Rantai dingin mereka menjaga kesegaran hasil tani
@@ -1427,11 +1729,13 @@
                   <p class="text-slate/70 text-[13px]">Vientiane Foods, Laos</p>
                 </div>
               </div>
+
               <!-- Testimoni 8 -->
               <div class="w-full shrink-0 px-2">
                 <div class="bg-white rounded-5xl p-10 lg:p-14 text-center">
                   <p
                     class="text-ink text-[19px] sm:text-[22px] leading-relaxed font-medium text-balance"
+                    data-i18n="testimoni.kutipan8"
                   >
                     "Produk hasil tani Indonesia yang kami terima selalu dalam
                     kondisi prima. Petani lokal Indonesia yang professional,
@@ -1447,10 +1751,12 @@
               </div>
             </div>
           </div>
+
           <div class="flex items-center justify-center gap-3 mt-9">
             <button
               id="testi-prev"
               aria-label="Testimoni sebelumnya"
+              data-i18n-aria-label="testimoni.ariaPrev"
               class="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-leaf hover:text-white transition-colors text-ink"
             >
               <svg
@@ -1473,6 +1779,7 @@
             <button
               id="testi-next"
               aria-label="Testimoni berikutnya"
+              data-i18n-aria-label="testimoni.ariaNext"
               class="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-leaf hover:text-white transition-colors text-ink"
             >
               <svg
@@ -1510,19 +1817,26 @@
       <div
         class="absolute inset-0 bg-gradient-to-b from-ink via-ink/95 to-ink"
       ></div>
-
       <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
         <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
           <div class="reveal">
-            <p class="label-seksi mb-4" style="color: #6fcf8b">
+            <p
+              class="label-seksi mb-4"
+              style="color: #6fcf8b"
+              data-i18n="kontak.label"
+            >
               Hubungi Tim Ekspor
             </p>
             <h2
               class="text-balance font-extrabold tracking-tightest leading-[1.02] text-[36px] sm:text-[52px] text-white"
+              data-i18n="kontak.judul"
             >
               Beritahu kami volume Anda. Sisanya kami urus.
             </h2>
-            <p class="text-white/60 text-[17px] mt-6 leading-relaxed max-w-md">
+            <p
+              class="text-white/60 text-[17px] mt-6 leading-relaxed max-w-md"
+              data-i18n="kontak.deskripsi"
+            >
               Kirimkan detail kebutuhan Anda dan tim ekspor kami akan merespons
               dalam satu hari kerja dengan penawaran harga dan jadwal pelayaran
               terdekat.
@@ -1544,7 +1858,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                +62 21 5050 1234
+                <span>+62 21 5050 1234</span>
               </div>
               <div class="flex items-center gap-3 text-white/80 text-[15px]">
                 <svg
@@ -1571,7 +1885,7 @@
                     stroke-width="1.8"
                   />
                 </svg>
-                ekspor@bharvest.co.id
+                <span>ekspor@bharvest.co.id</span>
               </div>
               <div class="flex items-center gap-3 text-white/80 text-[15px]">
                 <svg
@@ -1594,7 +1908,9 @@
                     stroke-width="1.8"
                   />
                 </svg>
-                Terminal Ekspor Tanjung Priok, Jakarta
+                <span data-i18n="kontak.alamat"
+                  >Terminal Ekspor Tanjung Priok, Jakarta</span
+                >
               </div>
             </div>
           </div>
@@ -1608,13 +1924,16 @@
                 <label
                   for="cf-nama"
                   class="block text-[13px] font-medium text-white/70 mb-2"
-                  >Nama lengkap</label
+                  data-i18n="kontak.form.labelNama"
                 >
+                  Nama lengkap
+                </label>
                 <input
                   id="cf-nama"
                   type="text"
                   required
                   placeholder="Nama Anda"
+                  data-i18n-placeholder="kontak.form.placeholderNama"
                   class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
                 />
               </div>
@@ -1622,37 +1941,47 @@
                 <label
                   for="cf-perusahaan"
                   class="block text-[13px] font-medium text-white/70 mb-2"
-                  >Perusahaan</label
+                  data-i18n="kontak.form.labelPerusahaan"
                 >
+                  Perusahaan
+                </label>
                 <input
                   id="cf-perusahaan"
                   type="text"
                   required
                   placeholder="Nama perusahaan"
+                  data-i18n-placeholder="kontak.form.placeholderPerusahaan"
                   class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
                 />
               </div>
             </div>
+
             <div>
               <label
                 for="cf-email"
                 class="block text-[13px] font-medium text-white/70 mb-2"
-                >Email</label
+                data-i18n="kontak.form.labelEmail"
               >
+                Email
+              </label>
               <input
                 id="cf-email"
                 type="email"
                 required
                 placeholder="anda@perusahaan.com"
+                data-i18n-placeholder="kontak.form.placeholderEmail"
                 class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none focus:ring-0 transition-colors"
               />
             </div>
+
             <div>
               <label
                 for="cf-produk"
                 class="block text-[13px] font-medium text-white/70 mb-2"
-                >Produk yang diminati</label
+                data-i18n="kontak.form.labelProduk"
               >
+                Produk yang diminati
+              </label>
               <select
                 id="cf-produk"
                 class="w-full rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white focus:border-leaf focus:outline-none transition-colors"
@@ -1661,42 +1990,66 @@
                   color-scheme: dark;
                 "
               >
-                <option value="pisang" style="background: #1a1a1a">
+                <option
+                  value="pisang"
+                  style="background: #1a1a1a"
+                  data-i18n="kontak.form.opsiPisang"
+                >
                   Pisang Mentah
                 </option>
-                <option value="kelengkeng" style="background: #1a1a1a">
+                <option
+                  value="kelengkeng"
+                  style="background: #1a1a1a"
+                  data-i18n="kontak.form.opsiKelengkeng"
+                >
                   Kelengkeng
                 </option>
-                <option value="singkong olahan" style="background: #1a1a1a">
+                <option
+                  value="singkong olahan"
+                  style="background: #1a1a1a"
+                  data-i18n="kontak.form.opsiSingkong"
+                >
                   Singkong Olahan
                 </option>
-                <option value="semuanya" style="background: #1a1a1a">
+                <option
+                  value="semuanya"
+                  style="background: #1a1a1a"
+                  data-i18n="kontak.form.opsiSemua"
+                >
                   Semuanya
                 </option>
               </select>
             </div>
+
             <div>
               <label
                 for="cf-pesan"
                 class="block text-[13px] font-medium text-white/70 mb-2"
-                >Estimasi volume & tujuan pengiriman</label
+                data-i18n="kontak.form.labelPesan"
               >
+                Estimasi volume & tujuan pengiriman
+              </label>
               <textarea
                 id="cf-pesan"
                 rows="3"
                 placeholder="cth. 4 kontainer / bulan tujuan Rotterdam"
+                data-i18n-placeholder="kontak.form.placeholderPesan"
                 class="w-full resize-none rounded-2xl bg-white/[0.07] border border-white/15 px-4 py-3 text-[15px] text-white placeholder-white/35 focus:border-leaf focus:outline-none transition-colors"
               ></textarea>
             </div>
+
             <button
               type="submit"
               class="tombol-ripple tombol-gelap w-full bg-leaf hover:bg-leafd text-white font-semibold text-[15px] py-3.5 rounded-2xl transition-colors"
+              data-i18n="kontak.form.tombolKirim"
             >
               Kirim Permintaan
             </button>
+
             <p
               id="pesan-sukses"
               class="hidden text-leaf text-[14px] text-center font-medium"
+              data-i18n="kontak.form.pesanSukses"
             >
               Terima kasih. permintaan Anda telah terkirim. Kami akan
               menghubungi Anda dalam satu hari kerja.
@@ -1733,7 +2086,10 @@
               </svg>
               B-Harvest
             </a>
-            <p class="text-slate text-[14.5px] leading-relaxed max-w-xs">
+            <p
+              class="text-slate text-[14.5px] leading-relaxed max-w-xs"
+              data-i18n="footer.deskripsi"
+            >
               Pisang mentah dan kelengkeng premium, tumbuh di seluruh Indonesia
               dan diekspor dengan presisi rantai dingin ke pembeli di
               negara-negara ASEAN.
@@ -1741,20 +2097,34 @@
           </div>
 
           <div>
-            <p class="text-[13px] font-semibold text-ink mb-4">Produk</p>
+            <p
+              class="text-[13px] font-semibold text-ink mb-4"
+              data-i18n="footer.kolomProduk"
+            >
+              Produk
+            </p>
             <ul class="space-y-2.5 text-slate text-[14px]">
               <li>
-                <a href="#produk" class="hover:text-leaf transition-colors"
+                <a
+                  href="#produk"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkPisang"
                   >Pisang Mentah</a
                 >
               </li>
               <li>
-                <a href="#produk" class="hover:text-leaf transition-colors"
+                <a
+                  href="#produk"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkKelengkeng"
                   >Kelengkeng</a
                 >
               </li>
               <li>
-                <a href="#produk" class="hover:text-leaf transition-colors"
+                <a
+                  href="#produk"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkSingkong"
                   >Singkong Olahan</a
                 >
               </li>
@@ -1762,25 +2132,42 @@
           </div>
 
           <div>
-            <p class="text-[13px] font-semibold text-ink mb-4">Perusahaan</p>
+            <p
+              class="text-[13px] font-semibold text-ink mb-4"
+              data-i18n="footer.kolomPerusahaan"
+            >
+              Perusahaan
+            </p>
             <ul class="space-y-2.5 text-slate text-[14px]">
               <li>
-                <a href="#mengapa" class="hover:text-leaf transition-colors"
+                <a
+                  href="#mengapa"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkMengapa"
                   >Mengapa Kami</a
                 >
               </li>
               <li>
-                <a href="#galeri" class="hover:text-leaf transition-colors"
+                <a
+                  href="#galeri"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkGaleri"
                   >Galeri Kebun</a
                 >
               </li>
               <li>
-                <a href="#testimoni" class="hover:text-leaf transition-colors"
+                <a
+                  href="#testimoni"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkTestimoni"
                   >Pembeli Kami</a
                 >
               </li>
               <li>
-                <a href="#proses" class="hover:text-leaf transition-colors"
+                <a
+                  href="#proses"
+                  class="hover:text-leaf transition-colors"
+                  data-i18n="footer.linkProses"
                   >Proses Ekspor</a
                 >
               </li>
@@ -1788,11 +2175,16 @@
           </div>
 
           <div>
-            <p class="text-[13px] font-semibold text-ink mb-4">Hubungi Kami</p>
+            <p
+              class="text-[13px] font-semibold text-ink mb-4"
+              data-i18n="footer.kolomKontak"
+            >
+              Hubungi Kami
+            </p>
             <ul class="space-y-2.5 text-slate text-[14px]">
               <li>ekspor@bharvest.co.id</li>
               <li>+62 21 5050 1234</li>
-              <li>Tanjung Priok, Jakarta</li>
+              <li data-i18n="footer.alamat">Tanjung Priok, Jakarta</li>
             </ul>
           </div>
         </div>
@@ -1800,13 +2192,14 @@
         <div
           class="border-t border-black/[0.06] pt-7 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <p class="text-slate/70 text-[13px]">
+          <p class="text-slate/70 text-[13px]" data-i18n="footer.hakCipta">
             © 2026 B-Harvest. Seluruh hak cipta dilindungi.
           </p>
           <div class="flex items-center gap-5">
             <a
               href="#"
               aria-label="Instagram B-Harvest"
+              data-i18n-aria-label="footer.ariaInstagram"
               class="text-slate/60 hover:text-leaf transition-colors"
             >
               <svg
@@ -1835,9 +2228,11 @@
                 <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
               </svg>
             </a>
+
             <a
               href="#"
               aria-label="LinkedIn B-Harvest"
+              data-i18n-aria-label="footer.ariaLinkedin"
               class="text-slate/60 hover:text-leaf transition-colors"
             >
               <svg
@@ -1870,9 +2265,11 @@
                 />
               </svg>
             </a>
+
             <a
               href="#"
               aria-label="WhatsApp B-Harvest"
+              data-i18n-aria-label="footer.ariaWhatsapp"
               class="text-slate/60 hover:text-leaf transition-colors"
             >
               <svg

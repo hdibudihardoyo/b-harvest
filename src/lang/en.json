@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "produk": "Products",
+    "proses": "Export Process",
+    "mengapa": "Why Us",
+    "galeri": "Farm Gallery",
+    "testimoni": "Buyers",
+    "kontak": "Contact",
+    "cta": "Request a Quote"
+  },
+  "hero": {
+    "label": "🌱 Indonesian Farm Produce · Exported Worldwide",
+    "judul": "Premium Indonesian Agricultural Products",
+    "deskripsi": "High-quality fruits and farm produce from local Indonesian farmers, exported with cold-chain precision to global markets.",
+    "tombolProduk": "Explore Products",
+    "tombolProses": "See Export Process",
+    "altGambar": "A lush tropical garden at golden sunset"
+  },
+  "dipercaya": {
+    "label": "Trusted by importers across ASEAN countries"
+  },
+  "produk": {
+    "label": "Premium Indonesian Farm Produce",
+    "judul": "Three flagship products. One quality standard.",
+    "deskripsi": "Straight from local Indonesian farms to the global market. Harvested, processed, and packed to a consistent, trusted international export standard.",
+    "pisang": {
+      "badge": "Green Bananas",
+      "alt": "A bunch of freshly harvested raw green bananas",
+      "judul": "Firm, green, built for long journeys",
+      "deskripsi": "Harvested at 75–80% maturity so they stay firm through three weeks at sea and ripen perfectly upon arrival.",
+      "poin1": "Hand-selected by the bunch",
+      "poin2": "13.5°C cold chain",
+      "poin3": "Global G.A.P. certified"
+    },
+    "kelengkeng": {
+      "badge": "Longan",
+      "alt": "A cluster of fresh longan fruit",
+      "judul": "Small fruit, strict standards",
+      "deskripsi": "Clear white flesh with deep sweetness; shelf life extended through rapid post-harvest cooling.",
+      "poin1": "Verified 22°Bx sugar content",
+      "poin2": "4 hours from field to cold room",
+      "poin3": "100% traceable to source farm"
+    },
+    "singkong": {
+      "badge": "Processed Cassava",
+      "alt": "Peeled, cut, and neatly packed Indonesian cassava",
+      "judul": "Indonesian farm produce, ready as raw material",
+      "deskripsi": "Premium cassava from local Indonesian farmers, processed directly at our facility to export standards. Cleanly peeled, hygienically washed, cut to specification, and neatly packed for immediate use in food production.",
+      "poin1": "Harvested from local Indonesian farms",
+      "poin2": "Peeled, washed, and cut at our facility",
+      "poin3": "Hygienically packed, ready to use raw material"
+    }
+  },
+  "statistik": {
+    "negara": "Countries served",
+    "ton": "Tons exported / year",
+    "ketepatan": "On-time delivery rate",
+    "pengalaman": "Years of export experience"
+  },
+  "proses": {
+    "label": "From Farm to Destination Port",
+    "judul1": "One route.",
+    "judul2": "No shortcuts.",
+    "deskripsi": "Every shipment goes through the same five stages, nothing skipped, nothing compromised.",
+    "langkah1": {
+      "tahap": "Stage 01",
+      "judul": "Harvested at the Farm",
+      "deskripsi": "Manually harvested by trained teams at 75–80% maturity ripe enough for quality flavor, firm enough for a three-week sea voyage."
+    },
+    "langkah2": {
+      "tahap": "Stage 02",
+      "judul": "Sorted at the Packhouse",
+      "deskripsi": "Every bunch is sorted, washed, and dimension-checked. Anything that doesn't meet standard is set aside here, not on the ship or at the destination port."
+    },
+    "langkah3": {
+      "tahap": "Stage 03",
+      "judul": "Cold Storage",
+      "deskripsi": "Pre-cooled within 4 hours of harvest. Stored at 13.5°C and continuously monitored until the container is ready to depart."
+    },
+    "langkah4": {
+      "tahap": "Stage 04",
+      "judul": "Port & Container",
+      "deskripsi": "Customs documents, phytosanitary certificates, and certificates of origin are fully prepared. Containers are sealed, logged, and ready to sail."
+    },
+    "langkah5": {
+      "tahap": "Stage 05",
+      "judul": "Arrival at Destination",
+      "deskripsi": "Delivered to your port on schedule. Full lot-level traceability is available, from the original farm block to final receipt."
+    }
+  },
+  "mengapa": {
+    "label": "Why B-Harvest",
+    "judul": "Quality you don't just have to take our word for.",
+    "kartu1Judul": "Certified at every stage",
+    "kartu1Teks": "Global G.A.P., HACCP, and phytosanitary documents accompany every shipment, not just the first one.",
+    "kartu2Judul": "A schedule you can rely on",
+    "kartu2Teks": "Weekly departure slots are booked well in advance, so your inventory planning doesn't depend on our harvest season.",
+    "kartu3Judul": "Straight from the farm, no middlemen",
+    "kartu3Teks": "We work directly with partner farms, meaning more competitive pricing and full visibility into product origin.",
+    "kartu4Judul": "Consistent quality, lot after lot",
+    "kartu4Teks": "Standardized grading criteria ensure the carton you receive in March is exactly the same as the one shipped in October.",
+    "kartu5Judul": "Full shipment traceability",
+    "kartu5Teks": "Track every container from packhouse to port with lot-level documentation on request.",
+    "kartu6Judul": "A team that always answers",
+    "kartu6Teks": "Every buyer gets a dedicated export coordinator, not a ticket queue."
+  },
+  "galeri": {
+    "label": "Farm Gallery",
+    "judul": "This is where it all begins.",
+    "alt1": "A sweep of tropical crops under a blue sky",
+    "alt2": "A farm worker tending to the plants",
+    "alt3": "Colorful fresh fruit at the market",
+    "alt4": "Fruit packed in containers ready for shipment",
+    "alt5": "Interior of a modern export-ready warehouse",
+    "alt6": "Close-up of fresh tropical fruit",
+    "alt7": "A port loading export containers at sea"
+  },
+  "testimoni": {
+    "label": "Global Buyer Testimonials",
+    "judul": "Trusted by importers across ASEAN countries.",
+    "deskripsi": "What our buyers say about the quality of our Indonesian farm produce, shipment consistency, and B-Harvest's professional service.",
+    "ariaPrev": "Previous testimonial",
+    "ariaNext": "Next testimonial",
+    "kutipan1": "Three years of ordering, and the firmness of the fruit on arrival has never once been inconsistent. That's the core of this business relationship.",
+    "kutipan2": "Their longan Brix score is the most consistent of any Southeast Asian exporter we've ever tested.",
+    "kutipan3": "We shifted our entire green banana program to them after one trial container. The documentation alone saved us weeks of customs processing.",
+    "kutipan4": "Their processed cassava is perfect for our food industry needs. Already peeled, clean, and ready to use immediately. Our production cost efficiency improved by 30%.",
+    "kutipan5": "High-quality Indonesian farm produce. Neat packaging, complete documentation, and responsive customer service. Our best partner in Asia.",
+    "kutipan6": "Trust in every shipment is key. They've never sent us a product that fell short of standard. The consistency of their produce quality is remarkable.",
+    "kutipan7": "Straight from the farm to the buyer's hands with perfect precision. Their cold chain keeps produce exclusively fresh. Highly recommended!",
+    "kutipan8": "The Indonesian farm produce we receive is always in prime condition. Professional local Indonesian farmers, managed by a trustworthy B-Harvest."
+  },
+  "kontak": {
+    "label": "Contact the Export Team",
+    "judul": "Tell us your volume. We'll handle the rest.",
+    "deskripsi": "Send us the details of your needs and our export team will respond within one business day with a price quote and the nearest shipping schedule.",
+    "alamat": "Tanjung Priok, Jakarta, Indonesia",
+    "form": {
+      "labelNama": "Full name",
+      "placeholderNama": "Your name",
+      "labelPerusahaan": "Company",
+      "placeholderPerusahaan": "Company name",
+      "labelEmail": "Email",
+      "placeholderEmail": "you@company.com",
+      "labelProduk": "Product of interest",
+      "opsiPisang": "Green Bananas",
+      "opsiKelengkeng": "Longan",
+      "opsiSingkong": "Processed Cassava",
+      "opsiSemua": "All of the above",
+      "labelPesan": "Estimated volume & shipping destination",
+      "placeholderPesan": "e.g. 4 containers / month to Rotterdam",
+      "tombolKirim": "Send Request",
+      "pesanSukses": "Thank you. Your request has been sent. We'll contact you within one business day."
+    }
+  },
+  "footer": {
+    "deskripsi": "Premium green bananas and longan, grown across Indonesia and exported with cold-chain precision to buyers in ASEAN countries.",
+    "kolomProduk": "Products",
+    "linkPisang": "Green Bananas",
+    "linkKelengkeng": "Longan",
+    "linkSingkong": "Processed Cassava",
+    "kolomPerusahaan": "Company",
+    "linkMengapa": "Why Us",
+    "linkGaleri": "Farm Gallery",
+    "linkTestimoni": "Our Buyers",
+    "linkProses": "Export Process",
+    "kolomKontak": "Contact Us",
+    "alamat": "Tanjung Priok, Jakarta, Indonesia",
+    "hakCipta": "© 2026 B-Harvest. All rights reserved.",
+    "ariaInstagram": "B-Harvest Instagram",
+    "ariaLinkedin": "B-Harvest LinkedIn",
+    "ariaWhatsapp": "B-Harvest WhatsApp"
+  }
+}

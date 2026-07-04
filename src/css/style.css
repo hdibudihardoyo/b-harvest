@@ -33,6 +33,15 @@ body {
   border-radius: 4px;
 }
 
+.lang-btn {
+  color: inherit;
+  opacity: 0.6;
+}
+.lang-btn.lang-active {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 @keyframes scrollline {
   0% {
     transform: translateY(-100%);

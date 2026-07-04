@@ -329,4 +329,103 @@
         });
     });
   }
+
+  /* --------------------------------------------------------
+     11. TRANSLATION
+  -------------------------------------------------------- */
+
+  const LANG_KEY = "site-lang";
+  const DEFAULT_LANG = "id";
+  const SUPPORTED = ["id", "en"];
+
+  let dict = {};
+  let currentLang = localStorage.getItem(LANG_KEY) || DEFAULT_LANG;
+
+  // Ambil nilai dari object nested pakai key string, contoh: "nav.produk"
+  function getNested(obj, path) {
+    return path
+      .split(".")
+      .reduce((acc, key) => (acc ? acc[key] : undefined), obj);
+  }
+
+  async function loadDictionary(lang) {
+    const res = await fetch(`lang/${lang}.json`);
+    if (!res.ok) throw new Error(`Gagal memuat file bahasa: ${lang}`);
+    return res.json();
+  }
+
+  function applyTranslations() {
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const value = getNested(dict, key);
+      if (value !== undefined) {
+        el.textContent = value;
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      const value = getNested(dict, key);
+      if (value !== undefined) el.setAttribute("placeholder", value);
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-alt");
+      const value = getNested(dict, key);
+      if (value !== undefined) el.setAttribute("alt", value);
+    });
+
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-aria-label");
+      const value = getNested(dict, key);
+      if (value !== undefined) el.setAttribute("aria-label", value);
+    });
+
+    document.documentElement.setAttribute("lang", currentLang);
+    updateSwitcherUI();
+  }
+
+  function updateSwitcherUI() {
+    document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
+      const isActive = btn.getAttribute("data-lang-switch") === currentLang;
+      btn.classList.toggle("lang-active", isActive);
+    });
+  }
+
+  async function setLanguage(lang) {
+    if (!SUPPORTED.includes(lang)) return;
+    try {
+      dict = await loadDictionary(lang);
+      currentLang = lang;
+      localStorage.setItem(LANG_KEY, lang);
+      applyTranslations();
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  function initLanguageSwitcher() {
+    document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang-switch");
+        setLanguage(lang);
+      });
+    });
+
+    // Toggle sederhana (satu tombol, ganti ID <-> EN)
+    document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const next = currentLang === "id" ? "en" : "id";
+        setLanguage(next);
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initLanguageSwitcher();
+    setLanguage(currentLang);
+  });
+
+  // Expose kalau perlu dipanggil manual dari script lain
+  window.i18n = { setLanguage, getCurrentLang: () => currentLang };
 })();
